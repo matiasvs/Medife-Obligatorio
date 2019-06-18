@@ -119,13 +119,13 @@ public class AltaResponsableDePago {
 	public void validTipoResonsable11() {		
 		String checkTipoResponsable = this.driver.findElement(ByNombreApellido).getAttribute("value");
 		System.out.println(checkTipoResponsable);
-		assertEquals(checkTipoResponsable, "GOMEZ", "No se encontro el valor esperado: ");	
+		assertEquals(checkTipoResponsable, "ALACID CLAUDIO LUCIANO", "No se encontro el valor esperado: ");	
  	}
 	
 	public void validAltaCuitCuil11() {
 		String checkCuitCuil = this.driver.findElement(ByCuitCuil).getAttribute("value");
 		System.out.println(checkCuitCuil);
-		assertEquals(checkCuitCuil, "20318861200", "No se encontro el cuit/cuil esperado: ");
+		assertEquals(checkCuitCuil, "20291531777", "No se encontro el cuit/cuil esperado: ");
 	}	
 	
 		
