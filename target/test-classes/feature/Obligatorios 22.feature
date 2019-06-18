@@ -1,5 +1,5 @@
 Feature: Med 165 - Obligatorios 22 - Datos Fiscales, validación requeridos y Validaciones para Condición IVA Exento - Fecha inicio Cond.IVA Botón Confirmar
-Datos fiscales, validacion requerdos y Validaciones para condicion IVA excento - fecha inicio condicion IVA boton confirmar
+
   #Se ingreso la prueba con los 2 botones
   Scenario Outline: Comportamiento
     Given Obligatorio vb Dado un usuario conectado
@@ -32,7 +32,7 @@ Datos fiscales, validacion requerdos y Validaciones para condicion IVA excento -
     Then Obligatorio vb Tipo telefono <tipoTelefono>
     Then Obligatorio vb Prefijo <prefigo>
     Then Obligatorio vb Numero <numero>
-    Then Obligatorio vbs no guarda los datos
+    Then Obligatorio vb no guarda los datos
 
     Examples: 
       | tipoResponsable | cuitCuil    | descripcion                 | mail             | fechaVigencia | condicionIVA | fechaInicioCondicionIVA | formaPago | facturaElectronica | DatosFiscalesMail          |
