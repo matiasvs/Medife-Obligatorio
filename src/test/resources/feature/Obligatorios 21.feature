@@ -1,4 +1,4 @@
-Feature: Med 163 - Obligatorios 21 - Validar comportamiento pantalla segun valor campo Condición de IVA "Consumidor final"
+Feature: Med 163 - Obligatorios 21 - Validar comportamiento pantalla segun valor campo Condicion de IVA "Consumidor final"
 
   #Se ingreso la prueba con los 2 botones
   Scenario Outline: Comportamiento
