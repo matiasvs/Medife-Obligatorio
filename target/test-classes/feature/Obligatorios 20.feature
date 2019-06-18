@@ -26,4 +26,4 @@ Feature: Med 162 - Obligatorios 20 - Validar comportamiento pantalla segun valor
 
     Examples: 
       | tipoResponsable | cuitCuil    | descripcion         | mail             | fechaVigencia | condicionIVA | condicionIva | formaPago | facturaElectronica | DatosFiscalesMail          |
-      | Empresa         | 30504744538 | 	PEUGEOT CITROEN ARGENTINA S.A. | catfer@email.com | 07/06/2019    | Monotributo  | 14/06/2019   | check     | dato               | variableFiscales@gmail.com |
+      | Empresa         | 30552982815 | MOSAICOS ROSSI HNOS. S.R.L. | catfer@email.com | 07/06/2019    | Monotributo  | 14/06/2019   | check     | dato               | variableFiscales@gmail.com |
