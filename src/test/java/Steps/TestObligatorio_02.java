@@ -14,7 +14,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import utils.PropertyManager;
 
-public class TestObligatorio_2 {
+public class TestObligatorio_02 {
 	
 	private WebDriver driver;
 	
