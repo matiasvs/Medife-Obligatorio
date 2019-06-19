@@ -29,4 +29,4 @@ Feature: Med 186 - Obligatorios 422 - Seccion Telefono Validar Boton Modificar
 
     Examples: 
       | tipoResponsable | cuitCuil    | descripcion             | mail             | fechaVigencia | TipoDeTelefono | Prefijo | Numero   | NuevoTipoDeTelefono | NuevoPrefijo | NuevoNumero | NuevoInterno |
-      | Empresa         | 30528640458 | CONGREGACION DE LAS HNAS. MINIMAS DE NUESTRA SEÑOR | catfer@email.com | 07/06/2019    | Particular     |     011 | 42424242 | Laboral             |          015 |    23237878 |           56 |
+      | Empresa         | 30678887192 | UNIVERSIDAD NACIONAL DE GRAL. SARMIENTO | catfer@email.com | 07/06/2019    | Particular     |     011 | 42424242 | Laboral             |          015 |    23237878 |           56 |
