@@ -136,8 +136,8 @@ public class TestObligatorio_28 {
 	    throw new cucumber.api.PendingException();
 	}
 
-	@Then("Obligatorio ft Entonces la aplicaci?n guarda los datos ingresados PREGUNTA CIERRA LA VENTANA O PERMANECE")
-	public void obligatorio_ft_Entonces_la_aplicaci_n_guarda_los_datos_ingresados_PREGUNTA_CIERRA_LA_VENTANA_O_PERMANECE() {
+	@Then("Obligatorio ft Entonces la aplicacion guarda los datos ingresados PREGUNTA CIERRA LA VENTANA O PERMANECE")
+	public void obligatorio_ft_Entonces_la_aplicacion_guarda_los_datos_ingresados_PREGUNTA_CIERRA_LA_VENTANA_O_PERMANECE() {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new cucumber.api.PendingException();
 	}

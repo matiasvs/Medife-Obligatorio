@@ -19,7 +19,7 @@ Feature: Med 171 - Obligatorios 28 - Fecha inicio Cond.IVA < al dia de la fecha 
     And Obligatorio ft Ingreso Condicion IVA <condicionIva>
     And Obligatorio ft Ingreso fecha inicio condicion IVA <fechaInicioCondicionIVA>
     When Obligatorio ft Selecciono el boton guardar
-    Then Obligatorio ft Entonces la aplicación guarda los datos ingresados PREGUNTA CIERRA LA VENTANA O PERMANECE
+    Then Obligatorio ft Entonces la aplicacion guarda los datos ingresados PREGUNTA CIERRA LA VENTANA O PERMANECE
     
 
     Examples: 
