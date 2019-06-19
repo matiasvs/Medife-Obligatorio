@@ -1,4 +1,4 @@
-Feature: Med 155 - Obligatorios 13 - Validar Botón Guardar en el Ingreso Manual de datos según selección tipo de responsable = Externo
+Feature: Med 155 - Obligatorios 13 new - Validar Botón Guardar en el Ingreso Manual de datos según selección tipo de responsable = Externo
 
   Scenario Outline: Comportamiento
     Given Obligatorio M Dado un usuario conectado

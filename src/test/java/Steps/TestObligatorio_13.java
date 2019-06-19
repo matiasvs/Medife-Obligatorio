@@ -35,7 +35,7 @@ public class TestObligatorio_13 {
 
 	@Given("Obligatorio M Usuario: <maru>")
 	public void obligatorio_M_Usuario_maru() {
-		 System.out.println("Usuario: maru");
+		 System.out.println("Usuario: cucumber");
 	}
 
 	@Given("Obligatorio M Pass: <p{int}>")
