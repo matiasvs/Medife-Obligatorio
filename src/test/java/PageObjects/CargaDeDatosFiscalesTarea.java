@@ -7,6 +7,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CargaDeDatosFiscalesTarea {
 
@@ -248,20 +250,50 @@ public class CargaDeDatosFiscalesTarea {
 	
 	// METODOS TELEFONO
 	public void ingresoNuevoTelefono () {
-		this.driver.findElement(ByNuevoTelefono).click();
-	}
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement guru99seleniumlink;
+		guru99seleniumlink= wait.until(ExpectedConditions.elementToBeClickable(ByNuevoTelefono));
+		guru99seleniumlink.click();		
+		}
+//		this.driver.findElement(ByNuevoTelefono).click();
+//		Thread.sleep(8000);
+//	}
+
+//	public void ingresoNuevoTelefono () throws InterruptedException {
+//		this.driver.findElement(ByNuevoTelefono).click();
+//		Thread.sleep(8000);
+//	}
 	
 	// METODOS TELEFONO - PopUp
 	public WebElement ingresoTipoDeTelefono(String tipoDeTelefono) {
-		this.driver.findElement(ByTipoDeTelefono).sendKeys(tipoDeTelefono);
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement guru99seleniumlink2;
+		guru99seleniumlink2= wait.until(ExpectedConditions.elementToBeClickable(ByTipoDeTelefono));
+		guru99seleniumlink2.sendKeys(tipoDeTelefono);
 		Actions action = new Actions(driver);
 		action.sendKeys(Keys.ENTER).build().perform();
-		return null;
-	}	
+		return null;		
+		}
+		
+//	public WebElement ingresoTipoDeTelefono(String tipoDeTelefono) throws InterruptedException {
+//		this.driver.findElement(ByTipoDeTelefono).sendKeys(tipoDeTelefono);
+//		Actions action = new Actions(driver);
+//		action.sendKeys(Keys.ENTER).build().perform();
+//		Thread.sleep(8000);
+//		return null;
+//	}	
 	
 	public void ingresoPrefijo(String prefijo) {
-		this.driver.findElement(ByPrefijo).sendKeys(prefijo.trim());
-	}
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement guru99seleniumlink3;
+		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(ByPrefijo));
+		guru99seleniumlink3.sendKeys(prefijo);
+		}
+		//this.driver.findElement(ByPrefijo).sendKeys(prefijo.trim());
+	//}
+//	public void ingresoPrefijo(String prefijo) {
+//		this.driver.findElement(ByPrefijo).sendKeys(prefijo.trim());
+//	}
 	
 	public void ingresoPrefijoNuevo(String prefijo) {
 		this.driver.findElement(ByPrefijo).clear();
@@ -311,15 +343,28 @@ public class CargaDeDatosFiscalesTarea {
 		Thread.sleep(2000);
 	}
 	
+//	public void checkboxTelefono() throws InterruptedException {
+//		WebDriverWait wait=new WebDriverWait(driver, 20);
+//		WebElement guru99seleniumlink5;
+//		guru99seleniumlink5= wait.until(ExpectedConditions.elementIfVisible(//*[normalize-space(text()) and normalize-space(.)='Interno'])[1]/following::div[1]));
+//		guru99seleniumlink5.click()));
+//	}
 	public void checkboxTelefono() throws InterruptedException {
 		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Interno'])[1]/following::div[1]")).click();
 		System.out.println("check22");
 		Thread.sleep(2000);
 	}
 	
+//	public void btnModificar() throws InterruptedException {
+//		WebDriverWait wait=new WebDriverWait(driver, 20);
+//		WebElement guru99seleniumlink5;
+//		guru99seleniumlink5= wait.until(ExpectedConditions.elementToBeClickable(ByModificarTelefono));
+//		guru99seleniumlink5.click();
+//		}
+	
 	public void btnModificar() throws InterruptedException {
 		this.driver.findElement(ByModificarTelefono).click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 	}
 	
 	public void btnBorrarTelefono() throws InterruptedException {

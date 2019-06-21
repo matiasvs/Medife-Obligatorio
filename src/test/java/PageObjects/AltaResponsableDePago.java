@@ -9,6 +9,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AltaResponsableDePago {
 	
@@ -80,9 +82,15 @@ public class AltaResponsableDePago {
 	}	
 	
 	// BOTONES //	
+//	public void btnConfirmar() throws InterruptedException {
+//		this.driver.findElement(ByConfirmar).click();
+//		Thread.sleep(2000);
+//	}
 	public void btnConfirmar() throws InterruptedException {
-		this.driver.findElement(ByConfirmar).click();
-		Thread.sleep(2000);
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement guru99seleniumlink3;
+		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(ByConfirmar));
+		guru99seleniumlink3.click();
 	}
 	
 	public void btnGuardar() throws InterruptedException {

@@ -100,13 +100,13 @@ public class TestObligatorio_41 {
 	}
 
 	@Then("Obligatorio bs Seleccionar boton Nuevo telefo")
-	public void obligatorio_bs_Seleccionar_boton_Nuevo_telefo() {
+	public void obligatorio_bs_Seleccionar_boton_Nuevo_telefo() throws InterruptedException {
 		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
 	    fiscales.ingresoNuevoTelefono();
 	}
 
 	@When("Obligatorio bs selcciono el valor Laboral en el campo Tipo de Telefono(.*)")
-	public void obligatorio_bs_selcciono_el_valor_Laboral_en_el_campo_Tipo_de_Telefono_Laboral(String tipoDeTelefono) {
+	public void obligatorio_bs_selcciono_el_valor_Laboral_en_el_campo_Tipo_de_Telefono_Laboral(String tipoDeTelefono) throws InterruptedException {
 		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
 	    fiscales.ingresoTipoDeTelefono(tipoDeTelefono);
 	}

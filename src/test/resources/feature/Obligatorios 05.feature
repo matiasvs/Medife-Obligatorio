@@ -17,4 +17,4 @@ Resultados del Buscador de Entidades Botón Seleccionar 1 registro
     
 	Examples: 
       | tipoResponsable | descripcion                       | BusquedaCuit |
-      | Empresa         | ETT FASTER ARGENTINA S.A | 30579572295  |
+      | Empresa         | PAFUMI EDUARDO DANIEL Y CARNUCCIO ROSA UNMACULADA | 30645207048  |

@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BusquedaDeEntidad {
 
@@ -32,10 +34,16 @@ public class BusquedaDeEntidad {
 	}
 	
 	// CAMPOS PANTALLA //
-	public void botonBusquedaEntidades() throws InterruptedException {
-		this.driver.findElement(ByBusquedaEntidades).click();
-		Thread.sleep(2000);
+	public void botonBusquedaEntidades() {
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement guru99seleniumlink3;
+		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(ByBusquedaEntidades));
+		guru99seleniumlink3.click();
 	}
+//	public void botonBusquedaEntidades() throws InterruptedException {
+//		this.driver.findElement(ByBusquedaEntidades).click();
+//		Thread.sleep(2000);
+//	}
 	
 	public void ingresoDescripcion(String descipcion) {
 		this.driver.findElement(ByDescripcionID).sendKeys(descipcion.trim());
@@ -52,9 +60,15 @@ public class BusquedaDeEntidad {
 	}
 	
 	public void botonBusqueda() throws InterruptedException {
-		this.driver.findElement(ByBusquedaEntidadesPopUp).click();
-		Thread.sleep(1000);
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement guru99seleniumlink3;
+		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(ByBusquedaEntidadesPopUp));
+		guru99seleniumlink3.click();
 	}
+//	public void botonBusqueda() throws InterruptedException {
+//		this.driver.findElement(ByBusquedaEntidadesPopUp).click();
+//		Thread.sleep(1000);
+//	}
 	
 	public void ConfirmarEntidad() throws InterruptedException {
 		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Registros por página'])[1]/following::span[9]")).click();		
