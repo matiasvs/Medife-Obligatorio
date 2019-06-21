@@ -50,6 +50,7 @@ public class TestObligatorio_06 {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
 		//buscarEntidad.ingresoBusquedaCuit(BusquedaCuit);
 		buscarEntidad.botonBusqueda();
+		Thread.sleep(2000);
 	}
 
 	@When("Obligatorio F el cursor marca el ultimo registro y Selecciona el Boton Seleccionar")

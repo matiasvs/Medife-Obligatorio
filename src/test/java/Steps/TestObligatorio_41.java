@@ -96,7 +96,7 @@ public class TestObligatorio_41 {
 	@Then("Obligatorio bs Validar pantalla Carga de datos fiscales")
 	public void obligatorio_bs_Validar_pantalla_Carga_de_datos_fiscales() {
 		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
-	    fiscales.checkPantallaDatosFiscales();
+	    //fiscales.checkPantallaDatosFiscales();
 	}
 
 	@Then("Obligatorio bs Seleccionar boton Nuevo telefo")

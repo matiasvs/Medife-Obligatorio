@@ -397,7 +397,7 @@ public class CargaDeDatosFiscalesTarea {
 		String StringTipo = this.driver.findElement(By.xpath("//*[@id=\'collapseTelefonoData\']/div/div[1]/table/tbody/tr/td[2]")).getText();
 		System.out.println("Se guardo el tipo de telefono: " + StringTipo);
 		assertEquals(StringTipo, "Particular", "No se encontro el valor correspondientes:: ");
-	}
+	} 
 	
 	public void checkTelefonoPrefijo() {
 		String StringPrefijo = this.driver.findElement(By.xpath("//*[@id=\'collapseTelefonoData\']/div/div[1]/table/tbody/tr/td[3]")).getText();

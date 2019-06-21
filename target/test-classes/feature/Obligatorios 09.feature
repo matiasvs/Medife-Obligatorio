@@ -16,3 +16,4 @@ Feature: Med 151 - Obligatorios 098 - Validar Buscador de Entidades Asociados se
 	Examples: 
       | tipoResponsable | descripcion    | cuitCuil    |
       | Grupo           | ALACID | 20291531777 |
+      #verificar la validacion para el posicionamiento de los campos de la grilla

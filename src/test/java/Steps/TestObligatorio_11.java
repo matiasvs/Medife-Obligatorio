@@ -78,7 +78,9 @@ public class TestObligatorio_11 {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
 		buscarEntidad.ingresoBusquedaCuit(BusquedaCuit);
 		buscarEntidad.botonBusqueda();
-		buscarEntidad.check();		
+		buscarEntidad.check();
+		Thread.sleep(2000);
+		buscarEntidad.ConfirmarEntidad();
 	}
 	
 	@Given("Obligatorio K ingreso fecha de vigencia(.*)")
@@ -89,8 +91,8 @@ public class TestObligatorio_11 {
 
 	@When("Obligatorio K Cuando Selecciono el Boton Seleccionar") // btnConfirmar
 	public void obligatorio_K_Cuando_Selecciono_el_Boton_Seleccionar() throws InterruptedException {
-		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
-		buscarEntidad.ConfirmarEntidad();
+//		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
+//		buscarEntidad.ConfirmarEntidad();
 		AltaResponsableDePago AltaResDePago = new AltaResponsableDePago(driver);
 		AltaResDePago.btnConfirmar();
 	}

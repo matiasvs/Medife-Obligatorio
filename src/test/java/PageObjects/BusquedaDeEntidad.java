@@ -18,7 +18,7 @@ public class BusquedaDeEntidad {
 	private By ByBusquedaCuitID = By.id("entityCuitId");
 	private By ByBusquedaEntidadesPopUp = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[3]/div/button[1]");	
 	private By ByResponsablePopUp = By.id("entityId");	
-	private By ByTitleBusquedaEntidad = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/mat-toolbar");
+	private By ByTitleBusquedaEntidad = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/mat-toolbar");//*[@id="mat-dialog-0"]/app-entidad/div/mat-toolbar
 	private By ByValidarResponsable = By.id("entityId");
 	private By ByBotonConfirmarEntidad = By.xpath("//*[normalize-space(text()) and normalize-space(.)='Registros por página'])[1]/following::span[9]");
 	
@@ -56,7 +56,7 @@ public class BusquedaDeEntidad {
 	public void check() throws InterruptedException {
 		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Descripción'])[2]/following::div[1]")).click();
 		System.out.println("check");
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 	
 	public void botonBusqueda() throws InterruptedException {
@@ -72,7 +72,7 @@ public class BusquedaDeEntidad {
 	
 	public void ConfirmarEntidad() throws InterruptedException {
 		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Registros por página'])[1]/following::span[9]")).click();		
-		Thread.sleep(300);
+		Thread.sleep(2000);
 	}
 	
 	public void ultimaPagina() throws InterruptedException {

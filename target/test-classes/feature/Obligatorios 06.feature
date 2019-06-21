@@ -10,6 +10,6 @@ Feature: Med 148 - Obligatorios 066 - N registros
     
 	Examples: 
       | tipoResponsable | descripcion  | cuitCuil |
-      | Empresa         |              |          |
+      | Empresa         | 	INSTITUTO CAROLINA ESTRADA DE MARTINEZ             | 30677689184        |
       
       #crear funciona para tomar el valor de la descripcion en el popUp de busque da entidad y luego compararlo en alta de responsabilidad de pago

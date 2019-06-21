@@ -15,3 +15,4 @@ Feature: Med 150 - Obligatorios 08 - Validar Botón Buscador de Entidades
     Examples: 
       | tipoResponsable |
       | Grup            |
+    

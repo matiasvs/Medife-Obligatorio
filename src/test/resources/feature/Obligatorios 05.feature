@@ -17,4 +17,4 @@ Resultados del Buscador de Entidades Botón Seleccionar 1 registro
     
 	Examples: 
       | tipoResponsable | descripcion                       | BusquedaCuit |
-      | Empresa         | PAFUMI EDUARDO DANIEL Y CARNUCCIO ROSA UNMACULADA | 30645207048  |
+      | Empresa         | 	ESCUELA MADRE TERESA | 30689341523  |

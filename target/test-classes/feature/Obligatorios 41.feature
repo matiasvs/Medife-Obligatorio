@@ -18,4 +18,4 @@ Feature: Med 185 - Obligatorios 41 - Seccion Telefono Validar Comportamiento de 
 
     Examples:  
       | tipoResponsable | cuitCuil    | descripcion          | mail             | fechaVigencia | TipoDeTelefono |
-      | Empresa         | 30597228984 | D ARC LIBERTADOR S.A.   | catfer@email.com | 07/06/2019 | Laboral |
+      | Empresa         | 30682361286 | TRENES DE BUENOS AIRES S.A.   | catfer@email.com | 07/06/2019 | Laboral |

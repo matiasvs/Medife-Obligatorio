@@ -79,7 +79,7 @@ public class TestObligatorio_13 {
 
 	@Then("Obligatorio M Guarda los datos ingresados e inicia el proceso, habilitando la seccion Datos Fiscales.")
 	public void obligatorio_M_Guarda_los_datos_ingresados_e_inicia_el_proceso_habilitando_la_seccion_Datos_Fiscales() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+		AltaResponsableDePago AltaResDePago = new AltaResponsableDePago(driver);
+		AltaResDePago.checkGuardar();
 	}
 }

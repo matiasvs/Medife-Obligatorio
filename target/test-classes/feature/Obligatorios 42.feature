@@ -28,5 +28,5 @@ Feature: Med 186 - Obligatorios 422 - Seccion Telefono Validar Boton Modificar
     Then Obligatorio cv La aplicacion habilia el registro seleccionado permitiendo su modificacion
 
     Examples: 
-      | tipoResponsable | cuitCuil    | descripcion                       | mail             | fechaVigencia | TipoDeTelefono | Prefijo | Numero   | NuevoTipoDeTelefono | NuevoPrefijo | NuevoNumero | NuevoInterno |
-      | Empresa         | 30528564468 | ASOC. PRO CULTURA FEMENINA COLEGIOS DE JESUS MARIA | catfer@email.com | 07/06/2019    | Particular     |     011 | 42424242 | Laboral             |          015 |    23237878 |           56 |
+      | tipoResponsable | cuitCuil    | descripcion  | mail             | fechaVigencia | TipoDeTelefono | Prefijo | Numero   | NuevoTipoDeTelefono | NuevoPrefijo | NuevoNumero | NuevoInterno |
+      | Empresa         | 30711120056 | TRESCIENTOS PRODUCTORA S.A. | catfer@email.com | 07/06/2019    | Particular     |     011 | 42424242 | Laboral             |          015 |    23237878 |           56 |

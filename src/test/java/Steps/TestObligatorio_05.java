@@ -88,7 +88,10 @@ public class TestObligatorio_05 {
 	@Given("Obligatorio E Se selecciona el valor con checkbox")
 	public void obligatorio_E_Se_selecciona_el_valor_con_checkbox() throws InterruptedException {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
+		buscarEntidad.botonBusqueda();
+		Thread.sleep(2000);
 		buscarEntidad.check();
+		Thread.sleep(1000);
 		buscarEntidad.ConfirmarEntidad();
 	}
 

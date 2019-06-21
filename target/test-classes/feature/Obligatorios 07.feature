@@ -1,4 +1,4 @@
-Feature: Med 149 - Obligatorios 07 - Validar comportamiento de la pantalla segun 
+Feature: Med 149 - Obligatorios 0757 - Validar comportamiento de la pantalla segun 
 seleccion tipo de responsable = Grupo Familiar
 
   Scenario Outline: Comportamiento

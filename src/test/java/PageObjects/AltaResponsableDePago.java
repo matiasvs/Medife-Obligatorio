@@ -94,14 +94,26 @@ public class AltaResponsableDePago {
 	}
 	
 	public void btnGuardar() throws InterruptedException {
-		this.driver.findElement(ByGuardar).click();
-		Thread.sleep(2000);
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement guru99seleniumlink3;
+		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(ByGuardar));
+		guru99seleniumlink3.click();
 	}
+//	public void btnGuardar() throws InterruptedException {
+//		this.driver.findElement(ByGuardar).click();
+//		Thread.sleep(2000);
+//	}
 	
 	public void btnCancelar() throws InterruptedException {
-		this.driver.findElement(ByCancelar).click();
-		Thread.sleep(2000);
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement guru99seleniumlink3;
+		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(ByCancelar));
+		guru99seleniumlink3.click();
 	}
+//	public void btnCancelar() throws InterruptedException {
+//		this.driver.findElement(ByCancelar).click();
+//		Thread.sleep(2000);
+//	}
 	
 	// VALIDAR CAMPOS //
 	public void validTitle() {
@@ -154,5 +166,11 @@ public class AltaResponsableDePago {
 		String stringFechaVigencia = this.driver.findElement(By.xpath("//p[contains(text(),'La fecha de vigencia no debe ser menor a 6 meses n')]")).getText();
 		System.out.println("Se muestra el mensaje: "+stringFechaVigencia);
 		assertEquals(stringFechaVigencia, "La fecha de vigencia no debe ser menor a 6 meses ni posterior a 6 meses de la fecha actual", "No se encontro el mensaje fecha de vigencia esperado: ");
+	}
+	//var eeee = $x("//p[contains(string(),'Responsable de pago guardado correctamente')]")
+	public void checkGuardar() {
+		String stringGuardar = this.driver.findElement(By.xpath("//p[contains(string(),'Responsable de pago guardado correctamente')]")).getText();
+		System.out.println("Mensaje desde el boton GUARDAR: " + stringGuardar);
+		assertEquals(stringGuardar, "Responsable de pago guardado correctamente", "No se encontro el mensaje de guardar correspondiente: ");
 	}
 }

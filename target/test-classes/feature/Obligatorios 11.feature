@@ -17,5 +17,5 @@ Resultados del Buscador de Entidades. Botón Seleccionar 1 registro
     
 	Examples: 
       | tipoResponsable | descripcion | cuitCuil    | fechaVigencia |
-      | Grupo           | ALACID | 20291531777 | 15/06/2019 |
+      | Grupo           | RIVEROS | 20083387204 | 15/06/2019 |
       #Falta validar la descripcion y cuit dentro de datos fiscales

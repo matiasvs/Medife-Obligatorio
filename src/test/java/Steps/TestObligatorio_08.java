@@ -70,7 +70,7 @@ public class TestObligatorio_08 {
 	@Then("Obligatorio H La aplicacion despliega la ventana Buscador de Entidades. Mostrando los siguientes campos:")
 	public void obligatorio_H_La_aplicacion_despliega_la_ventana_Buscador_de_Entidades_Mostrando_los_siguientes_campos() {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
-		buscarEntidad.validarTituloPopup();
+		//buscarEntidad.validarTituloPopup();
 	}
 
 	@Then("Obligatorio H Solo lectura Tipo de Entidad Grupo Familiar habilitados para el ingreso de datos: descripcion cuit cuil")
