@@ -102,6 +102,7 @@ public class TestObligatorio_42 {
 	@Then("Obligatorio cv Seleccionar boton Nuevo telefo")
 	public void obligatorio_cv_Seleccionar_boton_Nuevo_telefo() throws InterruptedException {
 		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
+		Thread.sleep(5000);
 	    fiscales.ingresoNuevoTelefono();
 	}
 
@@ -143,13 +144,15 @@ public class TestObligatorio_42 {
 	}
 	
 	@When("Obligatorio cv inicio edicion de campos")
-	public void obligatorio_cv_inicio_edicion_de_campos() {
+	public void obligatorio_cv_inicio_edicion_de_campos() throws InterruptedException {
 	    System.out.println("Inicio edicion de campos");
+	    //Thread.sleep(4000);
 	}
 
 	@When("Obligatorio cv nuevo Tipo de telefono(.*)")
 	public void obligatorio_cv_nuevo_Tipo_de_telefono_NuevoTipoDeTelefono(String NuevoTipoDeTelefono) throws InterruptedException {
 		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
+		Thread.sleep(5000);
 		fiscales.ingresoTipoDeTelefono(NuevoTipoDeTelefono);
 	}
 
