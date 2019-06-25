@@ -28,7 +28,7 @@ Feature: Med 178 - Obligatorios 35 - servicio de validación de BIN Inhabilitado
     #Y QUE PASA… SE PUEDE SEGUIR SIN ESOS DATOS??
     Examples:  
       | tipoResponsable | cuitCuil    | descripcion           | mail             | fechaVigencia | formaDePago | numeroTarjeta | fechaVencimiento | tipoTarjeta | descripcionTarjeta          |
-      | Empresa         | 30692272591 | NORAUTO ARGENTINA S.A | catfer@email.com | 09/06/2019    | Debito      | 252352355532  | 102020           | deb         | Dato descripcion de tarjeta |
+      | Empresa         | 30692272591 | NORAUTO ARGENTINA S.A | catfer@email.com | 09/06/2019    | Debito      | 252352355532  | 16/04/2021           | deb         | Dato descripcion de tarjeta |
       
       
       
