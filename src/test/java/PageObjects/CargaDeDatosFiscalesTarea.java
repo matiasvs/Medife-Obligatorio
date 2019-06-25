@@ -40,7 +40,7 @@ public class CargaDeDatosFiscalesTarea {
 	private By ByFechaVencimientoTarjeta = By.id("vencimientoTarjetaDateId");
 	private By ByTipoDeTarjeta = By.id("tipoTarjeta");
 	
-	// Adherido factura electrónica
+	// Adherido factura electrï¿½nica
 	private By ByAdheridoAFacturaElectronica = By.id("mat-checkbox-2");
 	private By ByEmailAdherido = By.id("billingEmailId");
 	
@@ -146,6 +146,16 @@ public class CargaDeDatosFiscalesTarea {
 	}
 	
 	// METODOS forma de pago	
+	public WebElement ingresoFormaDePagoPresencial() {
+		this.driver.findElement(ByFormaDePago).sendKeys(Keys.DOWN, Keys.TAB);
+		return null;
+	}
+	
+	public WebElement ingresoFormaDepagoDebitoEnCuenta() {
+		this.driver.findElement(ByFormaDePago).sendKeys(Keys.DOWN, Keys.DOWN, Keys.TAB);
+		return null;
+	}
+	
 	public WebElement ingresoFormaDePagoDebitoAutomatico() {
 		this.driver.findElement(ByFormaDePago).sendKeys(Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.TAB);
 		return null;		
@@ -165,14 +175,14 @@ public class CargaDeDatosFiscalesTarea {
 		return null;
 	}		
 		
-	// METODOS Adherido factura electrónica	
+	// METODOS Adherido factura electrï¿½nica	
 //	public void ingresoAdheridoAFacturaElectronica(String adheridoAFacturaElectronica) {
 //		this.driver.findElement(ByAdheridoAFacturaElectronica).sendKeys(Keys.SPACE);
-//		//*[normalize-space(text()) and normalize-space(.)='Adherido factura electrónica'])[1]/following::div[4]
+//		//*[normalize-space(text()) and normalize-space(.)='Adherido factura electrï¿½nica'])[1]/following::div[4]
 //	}
 	
 	public void BingresoAdheridoAFacturaElectronica() throws InterruptedException {
-		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Adherido factura electrónica'])[1]/following::div[4]")).click();
+		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Adherido factura electrï¿½nica'])[1]/following::div[4]")).click();
 		System.out.println("check22");
 		Thread.sleep(2000);
 	}

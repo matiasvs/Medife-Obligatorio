@@ -160,10 +160,10 @@ public class TestObligatorio_19 {
 		datosFiscales.ingresoCondicionIIBB(condicionIIBB);
 	}
 
-	@Then("Obligatorio T Forma de pago(.*)")
+	@Then("Obligatorio T Forma de pago(.*)")//formaDepago
 	public void obligatorio_T_Forma_de_pago_formaPago(String formaDepago) {
 		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
-		datosFiscales.ingresoFormaDePago(formaDepago);
+		datosFiscales.ingresoFormaDePagoPresencial();
 	}
 
 	@Then("Obligatorio T Adherido factura electronica(.*)")

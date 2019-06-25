@@ -1,4 +1,4 @@
-Feature: Med 161 - Obligatorios 19 - Validar comportamiento pantalla segun valor campo Condición de IVA Responsable Inscripto
+Feature: Med 161 - Obligatorios 19 - Validar comportamiento pantalla segun valor campo Condiciï¿½n de IVA Responsable Inscripto
 
   #Se ingreso la prueba con los 2 botones
   Scenario Outline: Comportamiento
@@ -27,5 +27,5 @@ Feature: Med 161 - Obligatorios 19 - Validar comportamiento pantalla segun valor
     Then Obligatorio T Email <DatosFiscalesMail>
 
     Examples:  
-      | tipoResponsable | cuitCuil    | descripcion                   | mail             | fechaVigencia | condicionIVA1 | condicionIva | nroIIBB       | CondicionIIBB | formaPago | DatosFiscalesMail  |
+      | tipoResponsable | cuitCuil    | descripcion               | mail             | fechaVigencia | condicionIVA1 | condicionIva | nroIIBB       | CondicionIIBB | formaPago | DatosFiscalesMail  |
       | Empresa         | 30558573232 | 	EMBAJADA BRITANICA    | catfer@email.com | 07/06/2019    | Responsable   | 12/06/2019   | 2235654654456 | Exento        | Pago Presencial     | correo@mail.com.ar |
