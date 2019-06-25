@@ -1,4 +1,4 @@
-Feature: Med 175 - Obligatorios 32 - Carga datos fiscales - Validaciones para Condición IVA Consumidor final
+Feature: Med 175 - Obligatorios 32a - Carga datos fiscales - Validaciones para Condición IVA Consumidor final
 
   #Se ingreso la prueba con los 2 botones
   Scenario Outline: Comportamiento
@@ -25,5 +25,5 @@ Feature: Med 175 - Obligatorios 32 - Carga datos fiscales - Validaciones para Co
     And Obligatorio za No guarda los datos
 
     Examples:  
-      | tipoResponsable | cuitCuil    | descripcion        | mail               | fechaVigencia | condicionIVA  | fechaInicioCondicionIva |
-      | Empresa         | 30683797150 | GAYNOR CONTROLS S.R.L.            | catfer@email.com   | 08/06/2019    | Consumidor    | 19/06/2019              |
+      | tipoResponsable | cuitCuil    | descripcion   | mail               | fechaVigencia | condicionIVA  | fechaInicioCondicionIva |
+      | Empresa         | 30584620389 | CARREFOUR ARGENTINA S.A. | catfer@email.com   | 08/06/2019    | Consumidor    | 19/06/2019              |

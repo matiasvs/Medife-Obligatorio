@@ -36,6 +36,9 @@ public class CargaDeDatosFiscalesTarea {
 	
 	// FORMA DE PAGO
 	private By ByFormaDePago = By.id("wayPayId");
+	private By ByNumeroDeTarjeta = By.id("nroTarjet");
+	private By ByFechaVencimientoTarjeta = By.id("vencimientoTarjetaDateId");
+	private By ByTipoDeTarjeta = By.id("tipoTarjeta");
 	
 	// Adherido factura electrónica
 	private By ByAdheridoAFacturaElectronica = By.id("mat-checkbox-2");
@@ -148,6 +151,32 @@ public class CargaDeDatosFiscalesTarea {
 		Actions action = new Actions(driver);
 		action.sendKeys(Keys.TAB).build().perform();
 		return null;
+	}
+	
+	public WebElement tipoDeTarjeta(String tipoTarjetas) {
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement guru99seleniumlink22;
+		guru99seleniumlink22= wait.until(ExpectedConditions.elementToBeClickable(ByTipoDeTarjeta));
+		guru99seleniumlink22.sendKeys(tipoTarjetas);
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ENTER).build().perform();
+		return null;	
+	}
+//	public WebElement tipoDeTarjeta(String tipoTarjeta) {
+//		this.driver.findElement(tipoTarjeta).sendKeys(tipoTarjeta);
+//		Actions action = new Actions(driver);
+//		action.sendKeys(Keys.TAB).build().perform();
+//		return null;
+//	}
+	
+	
+	
+	public void numeroDeTarjeta(String numeroTarjeta) {
+		this.driver.findElement(ByNumeroDeTarjeta).sendKeys(numeroTarjeta.trim());
+	}
+	
+	public void fechaDeVencimiento() {
+		
 	}
 	
 	// METODOS Adherido factura electrónica	
@@ -374,12 +403,11 @@ public class CargaDeDatosFiscalesTarea {
 	
 	// VALIDAR MENSAJES //	
 	public void checkPantallaDatosFiscales() {
-		String stringDatosFiscales1 = this.driver.findElement(By.xpath("//p[contains(text(),'Responsable de pago guardado correctamente')]")).getText();
-		String stringDatosFiscales2 = this.driver.findElement(By.xpath("//html/body/app-root/app-responsable-pago/mat-toolbar/span[1]")).getText();
+		String stringDatosFiscales2 = this.driver.findElement(By.xpath("/html/body/app-root/app-responsable-pago-datos-fiscales/mat-toolbar/span[1]")).getText();
 		//html/body/app-root/app-responsable-pago/mat-toolbar/span[1]
 		System.out.println("Se muestra el mensaje: "+stringDatosFiscales2);
 		//assertEquals(stringDatosFiscales2, "Responsable de pago guardado correctamente", "No se encontro el mensaje de Responsable de pago guardado: ");
-		assertEquals(stringDatosFiscales2, "Carga de Datos Fiscales -", "No se encontro el mensaje de Responsable de pago guardado: ");
+		assertEquals(stringDatosFiscales2, "Alta de Responsable de Pago - Carga de Datos Fiscales", "No se encontro el mensaje de Responsable de pago guardado: ");
 	}
 	
 	public void checkBtnOnlyValidar() {

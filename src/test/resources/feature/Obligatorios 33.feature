@@ -1,4 +1,4 @@
-Feature: Med 176 - Obligatorios 33 - Carga datos fiscales - Validaciones para Condición IVA Monotributista
+Feature: Med 176 - Obligatorios 33a - Carga datos fiscales - Validaciones para Condición IVA Monotributista
 
   #Se ingreso la prueba con los 2 botones
   Scenario Outline: Comportamiento
@@ -25,5 +25,5 @@ Feature: Med 176 - Obligatorios 33 - Carga datos fiscales - Validaciones para Co
     
 
     Examples:  
-      | tipoResponsable | cuitCuil    | descripcion                                | mail               | fechaVigencia | condicionIVA  | fechaInicioCondicionIva |
-      | Empresa         | 30534582761 | CATALENT ARGENTINA SAIC     | catfer@email.com   | 09/06/2019    | Monotributo    | 21/06/2019             |
+      | tipoResponsable | cuitCuil    | descripcion                 | mail               | fechaVigencia | condicionIVA  | fechaInicioCondicionIva |
+      | Empresa         | 30501036672 | LA PAPELERA DEL PLATA S.A. | catfer@email.com   | 09/06/2019    | Monotributo   | 21/06/2019              |
