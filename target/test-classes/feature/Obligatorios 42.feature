@@ -29,4 +29,4 @@ Feature: Med 186 - Obligatorios 422 - Seccion Telefono Validar Boton Modificar
 
     Examples: 
       | tipoResponsable | cuitCuil    | descripcion  | mail             | fechaVigencia | TipoDeTelefono | Prefijo | Numero   | NuevoTipoDeTelefono | NuevoPrefijo | NuevoNumero | NuevoInterno |
-      | Empresa         | 30682403671 | 		BIYEMAS S.A | catfer@email.com | 07/06/2019    | Particular     |     011 | 42424242 | Laboral             |          015 |    23237878 |           56 |
+      | Empresa         | 30529278566 | 	MARVAL O FARREL | catfer@email.com | 07/06/2019    | Particular     |     011 | 42424242 | Laboral             |          015 |    23237878 |           56 |

@@ -17,4 +17,4 @@ Resultados del Buscador de Entidades Bot�n Seleccionar 1 registro
     
 	Examples: 
       | tipoResponsable | descripcion                       | BusquedaCuit |
-      | Empresa         | SEMPERE S.A. | 30503175270  |
+      | Empresa         | 	ASOC. HNAS. DE NTRA. SRA. DEL ROSARIO | 30528996546  |
