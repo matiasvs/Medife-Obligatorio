@@ -94,15 +94,16 @@ public class TestObligatorio_42 {
 	}
 
 	@Then("Obligatorio cv Validar pantalla Carga de datos fiscales")
-	public void obligatorio_cv_Validar_pantalla_Carga_de_datos_fiscales() {
+	public void obligatorio_cv_Validar_pantalla_Carga_de_datos_fiscales() throws InterruptedException {
 		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
+		Thread.sleep(3000);
 	    //fiscales.checkPantallaDatosFiscales();
 	}
 
 	@Then("Obligatorio cv Seleccionar boton Nuevo telefo")
 	public void obligatorio_cv_Seleccionar_boton_Nuevo_telefo() throws InterruptedException {
 		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 	    fiscales.ingresoNuevoTelefono();
 	}
 
@@ -152,7 +153,7 @@ public class TestObligatorio_42 {
 	@When("Obligatorio cv nuevo Tipo de telefono(.*)")
 	public void obligatorio_cv_nuevo_Tipo_de_telefono_NuevoTipoDeTelefono(String NuevoTipoDeTelefono) throws InterruptedException {
 		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		fiscales.ingresoTipoDeTelefono(NuevoTipoDeTelefono);
 	}
 

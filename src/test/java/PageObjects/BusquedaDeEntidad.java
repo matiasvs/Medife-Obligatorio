@@ -20,7 +20,7 @@ public class BusquedaDeEntidad {
 	private By ByResponsablePopUp = By.id("entityId");	
 	private By ByTitleBusquedaEntidad = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/mat-toolbar");//*[@id="mat-dialog-0"]/app-entidad/div/mat-toolbar
 	private By ByValidarResponsable = By.id("entityId");
-	private By ByBotonConfirmarEntidad = By.xpath("//*[normalize-space(text()) and normalize-space(.)='Registros por página'])[1]/following::span[9]");
+	private By ByBotonConfirmarEntidad = By.xpath("//*[normalize-space(text()) and normalize-space(.)='Registros por pï¿½gina'])[1]/following::span[9]");
 	
 	private By ByDescripcionResultado = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[4]/div/table/tbody/tr/td[3]");
 	                                              //td[@class='mat-cell cdk-column-DESCRIPCION mat-column-DESCRIPCION ng-star-inserted'] xpathChroPath
@@ -54,7 +54,8 @@ public class BusquedaDeEntidad {
 	}
 	
 	public void check() throws InterruptedException {
-		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Descripción'])[2]/following::div[1]")).click();
+		//driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Descripciï¿½n'])[2]/following::div[1]")).click();
+		driver.findElement(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[4]/div/table/tbody/tr")).click();
 		System.out.println("check");
 		Thread.sleep(3000);
 	}
@@ -71,8 +72,10 @@ public class BusquedaDeEntidad {
 //	}
 	
 	public void ConfirmarEntidad() throws InterruptedException {
-		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Registros por página'])[1]/following::span[9]")).click();		
+		//driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Registros por pï¿½gina'])[1]/following::span[9]")).click();	
+		driver.findElement(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[5]/div/button")).click();
 		Thread.sleep(2000);
+		//*[@id="mat-dialog-0"]/app-entidad/div/div/div[5]/div/button
 	}
 	
 	public void ultimaPagina() throws InterruptedException {
@@ -82,7 +85,7 @@ public class BusquedaDeEntidad {
 	
 	public void checkboxLast() throws InterruptedException {
 		driver.findElement(By.xpath("//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]")).click();
-		Thread.sleep(500);
+		Thread.sleep(500);           //*[@id="mat-dialog-0"]/app-entidad/div/div/div[4]/div/table/tbody/tr
 	}
 	
 	public void ValidarUltimaDescripcion() throws InterruptedException {
@@ -114,7 +117,7 @@ public class BusquedaDeEntidad {
 	public void validarTituloPopup() {
 		String checkTitlePopUp = this.driver.findElement(ByTitleBusquedaEntidad).getText();
 		System.out.println("titulo validado: " + checkTitlePopUp);
-		assertEquals(checkTitlePopUp, "Búsqueda de entidad", "No se encontre el valor: ");
+		assertEquals(checkTitlePopUp, "Bï¿½squeda de entidad", "No se encontre el valor: ");
 	}
 	
 	public void validarResposableGrupoFamiliar() {

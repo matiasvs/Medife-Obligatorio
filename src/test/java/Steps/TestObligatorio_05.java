@@ -83,13 +83,14 @@ public class TestObligatorio_05 {
 	public void obligatorio_E_Selecciono_el_Boton_Seleccionar_y_se_selecciona_el_boton_Confirmar_entidad() throws InterruptedException {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
 		buscarEntidad.botonBusqueda();
+		Thread.sleep(3000);
 	}
 	
 	@Given("Obligatorio E Se selecciona el valor con checkbox")
 	public void obligatorio_E_Se_selecciona_el_valor_con_checkbox() throws InterruptedException {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
 		buscarEntidad.botonBusqueda();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		buscarEntidad.check();
 		Thread.sleep(1000);
 		buscarEntidad.ConfirmarEntidad();

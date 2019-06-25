@@ -1,5 +1,5 @@
 Feature: Med 147 - Obligatorios 05 - Validar Funcionamiento de la Pantalla de 
-Resultados del Buscador de Entidades Botón Seleccionar 1 registro
+Resultados del Buscador de Entidades Botï¿½n Seleccionar 1 registro
 
   Scenario Outline: Comportamiento
     Given Obligatorio E Dado un usuario perfil situado en la pantalla Alta de responsabilidad de pago
@@ -17,4 +17,4 @@ Resultados del Buscador de Entidades Botón Seleccionar 1 registro
     
 	Examples: 
       | tipoResponsable | descripcion                       | BusquedaCuit |
-      | Empresa         | 	ESCUELA MADRE TERESA | 30689341523  |
+      | Empresa         | SEMPERE S.A. | 30503175270  |
