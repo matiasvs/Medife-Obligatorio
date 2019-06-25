@@ -25,5 +25,5 @@ Feature: Med 176 - Obligatorios 33a - Carga datos fiscales - Validaciones para C
     
 
     Examples:  
-      | tipoResponsable | cuitCuil    | descripcion                 | mail               | fechaVigencia | condicionIVA  | fechaInicioCondicionIva |
-      | Empresa         | 30655116512 | EDESUR S.A. | catfer33@email.com   | 09/06/2019    | Monotributo   | 21/06/2019              |
+      | tipoResponsable | cuitCuil    | descripcion | mail               | fechaVigencia | condicionIVA  | fechaInicioCondicionIva |
+      | Empresa         | 30521197702 | PISANO S.A  | catfer33@email.com | 09/06/2019    | Monotributo   | 21/06/2019              |

@@ -19,16 +19,22 @@ Feature: Med 177 - Obligatorios 34as - servicio de validación de BIN habilitado
     Then Obligatorio dl validar ingreso a Datos fiscales
     And Obligatorio dl Y los siguientes datos ingresados
     And Obligatorio dl Forma de pago habilitada <formaDePago>
-    And Obligatorio dl Tipo de tarjeta <tipoTarjeta>
     And Obligatorio dl Numero de tarjeta <numeroTarjeta>
     And Obligatorio dl Fecha de vencimiento <fechaVencimiento>
+    And Obligatorio dl Tipo de tarjeta <tipoTarjeta>        
     And Obligatorio dl Descripcion de Tarjeta <descripcionTarjeta>
     When Obligatorio dl Seleccion boton guardar
     Then Obligatorio dl El servicio de validacion de BIN completa los datos de tipo y descripcion de tarjeta en caso de estar habilitado.    
     
     Examples:  
-      | tipoResponsable | cuitCuil    | descripcion                | mail               | fechaVigencia | formaDePago       | tipoTarjeta | numeroTarjeta | descripcionTarjeta          |
-      | Empresa         | 30501036672 | LA PAPELERA DEL PLATA S.A. | catfer@email.com   | 09/06/2019    | Debito automatico | tarjeta     | 123456321654  | Dato descripcion de tarjeta |
+      | tipoResponsable | cuitCuil    | descripcion           | mail             | fechaVigencia | formaDePago | numeroTarjeta | fechaVencimiento | tipoTarjeta | descripcionTarjeta          |
+      | Empresa         | 30692272591 | NORAUTO ARGENTINA S.A | catfer@email.com | 09/06/2019    | Debito      | 123456321654  | 102019           | deb         | Dato descripcion de tarjeta |
+      
+      
+      
+      
+      
+      
       
       
       

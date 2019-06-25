@@ -36,7 +36,7 @@ public class CargaDeDatosFiscalesTarea {
 	
 	// FORMA DE PAGO
 	private By ByFormaDePago = By.id("wayPayId");
-	private By ByNumeroDeTarjeta = By.id("nroTarjet");
+	private By ByNumeroDeTarjeta = By.id("nroTarjeta");
 	private By ByFechaVencimientoTarjeta = By.id("vencimientoTarjetaDateId");
 	private By ByTipoDeTarjeta = By.id("tipoTarjeta");
 	
@@ -146,39 +146,25 @@ public class CargaDeDatosFiscalesTarea {
 	}
 	
 	// METODOS forma de pago	
-	public WebElement ingresoFormaDePago(String formaDePago) {
-		this.driver.findElement(ByFormaDePago).sendKeys(formaDePago);
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.TAB).build().perform();
-		return null;
+	public WebElement ingresoFormaDePagoDebitoAutomatico() {
+		this.driver.findElement(ByFormaDePago).sendKeys(Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.TAB);
+		return null;		
 	}
-	
-	public WebElement tipoDeTarjeta(String tipoTarjetas) {
-		WebDriverWait wait=new WebDriverWait(driver, 20);
-		WebElement guru99seleniumlink22;
-		guru99seleniumlink22= wait.until(ExpectedConditions.elementToBeClickable(ByTipoDeTarjeta));
-		guru99seleniumlink22.sendKeys(tipoTarjetas);
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.ENTER).build().perform();
-		return null;	
-	}
-//	public WebElement tipoDeTarjeta(String tipoTarjeta) {
-//		this.driver.findElement(tipoTarjeta).sendKeys(tipoTarjeta);
-//		Actions action = new Actions(driver);
-//		action.sendKeys(Keys.TAB).build().perform();
-//		return null;
-//	}
-	
-	
 	
 	public void numeroDeTarjeta(String numeroTarjeta) {
 		this.driver.findElement(ByNumeroDeTarjeta).sendKeys(numeroTarjeta.trim());
 	}
 	
-	public void fechaDeVencimiento() {
-		
+	public void fechaDeVencimientoTarjeta(String fechaTarjeta) {
+		this.driver.findElement(ByFechaVencimientoTarjeta).sendKeys(fechaTarjeta.trim());;		
 	}
 	
+	//yTipoDeTarjeta ByTipoDeTarjeta
+	public WebElement tipoDeTarjetaDebito(String tarjetaDebito) {
+		this.driver.findElement(ByTipoDeTarjeta).sendKeys(Keys.DOWN , Keys.TAB);
+		return null;
+	}		
+		
 	// METODOS Adherido factura electrónica	
 //	public void ingresoAdheridoAFacturaElectronica(String adheridoAFacturaElectronica) {
 //		this.driver.findElement(ByAdheridoAFacturaElectronica).sendKeys(Keys.SPACE);

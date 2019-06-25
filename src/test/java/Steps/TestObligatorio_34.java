@@ -127,27 +127,29 @@ public class TestObligatorio_34 {
 	@Then("Obligatorio dl Forma de pago habilitada(.*)")
 	public void obligatorio_dl_Forma_de_pago_habilitada_Debito_automatico(String Debito) {
 		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
-	    fiscales.ingresoFormaDePago(Debito);
+	    fiscales.ingresoFormaDePagoDebitoAutomatico();
 	}
-
-	@Then("Obligatorio dl Tipo de tarjeta tarjeta")
-	public void obligatorio_dl_Tipo_de_tarjeta_tarjeta(String tipoTarjetas) {
-		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
-	    fiscales.tipoDeTarjeta(tipoTarjetas);
-	}
-
-	@Then("Obligatorio dl Numero de tarjeta (.*)")
+	
+	@Then("Obligatorio dl Numero de tarjeta(.*)")
 	public void obligatorio_dl_Numero_de_tarjeta(String numeroTarjeta) {
 		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
 	    fiscales.numeroDeTarjeta(numeroTarjeta);
 	}
-
+	
 	@Then("Obligatorio dl Fecha de vencimiento(.*)")
-	public void obligatorio_dl_Fecha_de_vencimiento_fechaVencimiento() {
+	public void obligatorio_dl_Fecha_de_vencimiento_fechaVencimiento(String fechaVencimiento) {
 		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
-	    fiscales.fechaDeVencimiento();
+	    fiscales.fechaDeVencimientoTarjeta(fechaVencimiento);
 	}
 
+	@Then("Obligatorio dl Tipo de tarjeta(.*)")
+	public void obligatorio_dl_Tipo_de_tarjeta_tarjeta(String tipoTarjetas) {
+		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
+	    fiscales.tipoDeTarjetaDebito(tipoTarjetas);
+		System.out.println("Tipo tarjeta");
+		System.out.println("tarjeta");
+	}
+	
 	@Then("Obligatorio dl Descripcion de Tarjeta Dato descripcion de tarjeta")
 	public void obligatorio_dl_Descripcion_de_Tarjeta_Dato_descripcion_de_tarjeta() {
 	    // Write code here that turns the phrase above into concrete actions
