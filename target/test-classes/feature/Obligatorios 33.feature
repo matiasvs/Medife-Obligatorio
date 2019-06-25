@@ -21,9 +21,9 @@ Feature: Med 176 - Obligatorios 33a - Carga datos fiscales - Validaciones para C
     And Obligatorio dr Campo Condicion IVA <condicionIVA>
     And Obligatorio dr Campo Fecha inicio condidicon IVA <fechaInicioCondicionIva>
     When Obligatorio dr Selecciono boton Guardar
-    Then Obligatorio dr la aplicación guarda los datos ingresados CIERRA LA VENTANA O PERMANECE - pregunta
+    Then Obligatorio dr la aplicacion guarda los datos ingresados CIERRA LA VENTANA O PERMANECE - pregunta
     
 
     Examples:  
       | tipoResponsable | cuitCuil    | descripcion                 | mail               | fechaVigencia | condicionIVA  | fechaInicioCondicionIva |
-      | Empresa         | 30501036672 | LA PAPELERA DEL PLATA S.A. | catfer@email.com   | 09/06/2019    | Monotributo   | 21/06/2019              |
+      | Empresa         | 30655116512 | EDESUR S.A. | catfer33@email.com   | 09/06/2019    | Monotributo   | 21/06/2019              |
