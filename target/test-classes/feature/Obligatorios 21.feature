@@ -9,8 +9,8 @@ Feature: Med 163 - Obligatorios 21 - Validar comportamiento pantalla segun valor
     And Obligatorio fg los siguientes datos ingresados y confirmados:
     And Obligatorio fg Tipo de Responsable <tipoResponsable>
     And Obligatorio fg PopUp Busqueda de entidades
-    And Obligatorio fg Ingreso cuit cuil <cuitCuil>
-    And Obligatorio fg Ingreso descripcion <descripcion>    
+    And Obligatorio fg Ingreso descripcion <descripcion> 
+    And Obligatorio fg Ingreso cuit cuil <cuitCuil>       
     And Obligatorio fg Busqueda seleccion y confirmacion de entidad
     And Obligatorio fg Ingreso campos necesarios mail y fecha de vigencia para que se pueda ejecutar datos fiscales
     And Obligatorio fg Ingreso eMail <mail>
@@ -26,4 +26,4 @@ Feature: Med 163 - Obligatorios 21 - Validar comportamiento pantalla segun valor
 
     Examples: 
       | tipoResponsable | cuitCuil    | descripcion                 | mail             | fechaVigencia | condicionIVA | fechaInicioCondicionIVA | formaPago | facturaElectronica | DatosFiscalesMail          |
-      | Grupo           | 30552982815 | MOSAICOS ROSSI HNOS. S.R.L. | catfer@email.com | 07/06/2019    | Consumidor   | 14/06/2019              | check     | dato               | variableFiscales@gmail.com |
+      | Grupo           | 20361435142 | 	FRIDLENDER | catfer@email.com | 07/06/2019    | Consumidor   | 14/06/2019              | check     | dato               | variableFiscales@gmail.com |

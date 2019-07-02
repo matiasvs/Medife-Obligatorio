@@ -13,7 +13,7 @@ public class BusquedaDeEntidad {
 
 	private WebDriver driver;
 	
-	private By ByBusquedaEntidades = By.xpath("//*[@id=\'collapseChargePaymentManager\']/div[5]/button");
+	private By ByBusquedaEntidades = By.xpath("//*[@id=\'collapseChargePaymentManager\']/form/div[5]/button");
 	private By ByDescripcionID = By.id("descriptionId");
 	private By ByBusquedaCuitID = By.id("entityCuitId");
 	private By ByBusquedaEntidadesPopUp = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[3]/div/button[1]");	
@@ -21,9 +21,9 @@ public class BusquedaDeEntidad {
 	private By ByTitleBusquedaEntidad = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/mat-toolbar");//*[@id="mat-dialog-0"]/app-entidad/div/mat-toolbar
 	private By ByValidarResponsable = By.id("entityId");
 	private By ByBotonConfirmarEntidad = By.xpath("//*[normalize-space(text()) and normalize-space(.)='Registros por p�gina'])[1]/following::span[9]");
-	
-	private By ByDescripcionResultado = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[4]/div/table/tbody/tr/td[3]");
-	                                              //td[@class='mat-cell cdk-column-DESCRIPCION mat-column-DESCRIPCION ng-star-inserted'] xpathChroPath
+	private By ByDescripcionResultado = By.id("descriptionId");
+	//private By ByDescripcionResultado = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[4]/div/table/tbody/tr/td[3]");
+	                                              
 	private By ByResultadoCuit = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[4]/div/table/tbody/tr/td[2]");
 	
 	private By ByEnabledDescripcion = By.id("descriptionId");
@@ -46,18 +46,36 @@ public class BusquedaDeEntidad {
 //	}
 	
 	public void ingresoDescripcion(String descipcion) {
-		this.driver.findElement(ByDescripcionID).sendKeys(descipcion.trim());
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement guru99seleniumlink3;
+		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(ByDescripcionID));
+		guru99seleniumlink3.sendKeys(descipcion.trim());
 	}
+//	public void ingresoDescripcion(String descipcion) {
+//		this.driver.findElement(ByDescripcionID).sendKeys(descipcion.trim());
+//	}
 	
 	public void ingresoBusquedaCuit(String BusquedaCuit) {
-		this.driver.findElement(ByBusquedaCuitID).sendKeys(BusquedaCuit.trim());
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement guru99seleniumlink3;
+		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(ByBusquedaCuitID));
+		guru99seleniumlink3.sendKeys(BusquedaCuit.trim());
 	}
+//	public void ingresoBusquedaCuit(String BusquedaCuit) {
+//		this.driver.findElement(ByBusquedaCuitID).sendKeys(BusquedaCuit.trim());
+//	}
 	
+//	public void check() throws InterruptedException {
+//		//driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Descripci�n'])[2]/following::div[1]")).click();
+//		driver.findElement(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[4]/div/table/tbody/tr")).click();
+//		System.out.println("check");
+//		Thread.sleep(3000);
+//	}
 	public void check() throws InterruptedException {
-		//driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Descripci�n'])[2]/following::div[1]")).click();
-		driver.findElement(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[4]/div/table/tbody/tr")).click();
-		System.out.println("check");
-		Thread.sleep(3000);
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement guru99seleniumlink3;
+		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[4]/div/table/tbody/tr")));
+		guru99seleniumlink3.click();
 	}
 	
 	public void botonBusqueda() throws InterruptedException {
@@ -73,20 +91,34 @@ public class BusquedaDeEntidad {
 	
 	public void ConfirmarEntidad() throws InterruptedException {
 		//driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Registros por p�gina'])[1]/following::span[9]")).click();	
-		driver.findElement(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[5]/div/button")).click();
+		driver.findElement(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[5]/div/button[2]")).click();
 		Thread.sleep(2000);
 		//*[@id="mat-dialog-0"]/app-entidad/div/div/div[5]/div/button
 	}
 	
 	public void ultimaPagina() throws InterruptedException {
-		driver.findElement(By.xpath("//button[@class='mat-paginator-navigation-last mat-icon-button ng-star-inserted']")).click();
-		Thread.sleep(5000);
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement guru99seleniumlink3;
+		guru99seleniumlink3= wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//button[@class='mat-paginator-navigation-last mat-icon-button ng-star-inserted']")));
+		guru99seleniumlink3.click();
 	}
+//	public void ultimaPagina() throws InterruptedException {
+//		driver.findElement(By.xpath("//button[@class='mat-paginator-navigation-last mat-icon-button ng-star-inserted']")).click();
+//		Thread.sleep(5000);
+//	}
 	
 	public void checkboxLast() throws InterruptedException {
-		driver.findElement(By.xpath("//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]")).click();
-		Thread.sleep(500);           //*[@id="mat-dialog-0"]/app-entidad/div/div/div[4]/div/table/tbody/tr
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebElement guru99seleniumlink3;
+		guru99seleniumlink3= wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]")));
+		guru99seleniumlink3.click();
 	}
+//	public void checkboxLast() throws InterruptedException {
+//		driver.findElement(By.xpath("//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]")).click();
+//		Thread.sleep(500);           //*[@id="mat-dialog-0"]/app-entidad/div/div/div[4]/div/table/tbody/tr
+//	}
 	
 	public void ValidarUltimaDescripcion() throws InterruptedException {
 		String tomarUltimaDescripcion = driver.findElement(By.xpath("//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[2]")).getText();
@@ -126,10 +158,15 @@ public class BusquedaDeEntidad {
 		assertEquals(checkValorResponsable, "Grupo Familiar", "No se encontre el valor: ");
 	}
 	
+//	public void validarResultadoDescripcionTest3 () {
+//		String checkRestDescripcion = this.driver.findElement(ByDescripcionResultado).getText();
+//		System.out.println("Resultado encontrado: " + checkRestDescripcion);
+//		assertEquals(checkRestDescripcion, "QUITRAL COM S.A.", "No se encontre el valor: ");
+//	}
 	public void validarResultadoDescripcionTest3 () {
-		String checkRestDescripcion = this.driver.findElement(ByDescripcionResultado).getText();
+		String checkRestDescripcion = this.driver.findElement(ByDescripcionResultado).getAttribute("value");
 		System.out.println("Resultado encontrado: " + checkRestDescripcion);
-		assertEquals(checkRestDescripcion, "HDA SOFT S.R.L.", "No se encontre el valor: ");
+		assertEquals(checkRestDescripcion, "QUITRAL COM S.A.", "No se encontre el valor: ");
 	}
 	
 	public void validarResultadoCuit () {

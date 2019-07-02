@@ -89,10 +89,8 @@ public class TestObligatorio_11 {
 		AltaResDePago.ingresoFechaVigencia(fechaVigencia);
 	}
 
-	@When("Obligatorio K Cuando Selecciono el Boton Seleccionar") // btnConfirmar
+	@When("Obligatorio K Cuando Selecciono el Boton Seleccionar")
 	public void obligatorio_K_Cuando_Selecciono_el_Boton_Seleccionar() throws InterruptedException {
-//		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
-//		buscarEntidad.ConfirmarEntidad();
 		AltaResponsableDePago AltaResDePago = new AltaResponsableDePago(driver);
 		AltaResDePago.btnConfirmar();
 	}

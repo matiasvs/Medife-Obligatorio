@@ -17,4 +17,4 @@ Resultados del Buscador de Entidades Bot�n Seleccionar 1 registro
     
 	Examples: 
       | tipoResponsable | descripcion                       | BusquedaCuit |
-      | Empresa         | 	ASOC. HNAS. DE NTRA. SRA. DEL ROSARIO | 30528996546  |
+      | Empresa         | SERVICIOS AMBIENTALES BUENOS AIRES S.R.L. | 30707000690  |

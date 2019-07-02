@@ -1,5 +1,5 @@
-Feature: Med 150 - Obligatorios 08 - Validar Botón Buscador de Entidades
-  Asociados segun selección tipo de responsable = Grupo Familiar
+Feature: Med 150 - Obligatorios 08 - Validar Botï¿½n Buscador de Entidades
+  Asociados segun selecciï¿½n tipo de responsable = Grupo Familiar
 
   Scenario Outline: Comportamiento
     Given Obligatorio H Dado un usuario conectado

@@ -1,5 +1,5 @@
 Feature: Med 153 - Obligatorios 11 - Validar Funcionamiento de la Pantalla de 
-Resultados del Buscador de Entidades. Botón Seleccionar 1 registro
+Resultados del Buscador de Entidades. Botï¿½n Seleccionar 1 registro
 
   Scenario Outline: Comportamiento
     Given Obligatorio K Dado un usuario conectado
@@ -17,5 +17,5 @@ Resultados del Buscador de Entidades. Botón Seleccionar 1 registro
     
 	Examples: 
       | tipoResponsable | descripcion | cuitCuil    | fechaVigencia |
-      | Grupo           | RIVEROS | 20083387204 | 15/06/2019 |
+      | Grupo           | RETEGUI  | 20208377923 | 15/06/2019 |
       #Falta validar la descripcion y cuit dentro de datos fiscales

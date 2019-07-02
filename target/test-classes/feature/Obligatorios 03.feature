@@ -12,5 +12,5 @@ Feature: Med 129 - Obligatorios 03 - Validar Buscador de Entidades segun criteri
 
     Examples: 
       | tipoResponsable | descipcion         | cuit        |
-      | Empresa         | HDA SOFT S.R.L. | 30652903416 |
+      | Empresa         | QUITRAL COM S.A. | 30646610059 |
       #falta validar grilla tomar el valor con los xpath y tr

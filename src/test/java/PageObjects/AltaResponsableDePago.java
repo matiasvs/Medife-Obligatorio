@@ -26,9 +26,9 @@ public class AltaResponsableDePago {
 	private By ByFechaBaja = By.id("lowDateId");
 	private By ByFechaVigencia = By.id("validDateId");
 	
-	private By ByCancelar = By.xpath("//*[@id=\"collapseChargePaymentManager\"]/div[6]/div/button[1]");
-	private By ByGuardar = By.xpath("//*[@id=\'collapseChargePaymentManager\']/div[6]/div/button[2]");
-	private By ByConfirmar = By.xpath("//*[@id=\'collapseChargePaymentManager\']/div[6]/div/button[3]");
+	private By ByCancelar = By.xpath("//*[@id=\"collapseChargePaymentManager\"]/form/div[6]/div/button[1]");
+	private By ByGuardar = By.xpath("//*[@id=\'collapseChargePaymentManager\']/form/div[6]/div/button[2]");
+	private By ByConfirmar = By.xpath("//*[@id=\"collapseChargePaymentManager\"]/form/div[6]/div/button[3]");
 	private By ByBusquedaEntidad2 = By.xpath("//*[@id=\'mat-dialog-2\']/app-entidad/div/div/div[5]/div/button");
 	
 	private By byMensajeCampoRequerido = By.xpath("/html/body/app-root/notifier-container/ul/li[1]/notifier-notification/p");
@@ -125,27 +125,27 @@ public class AltaResponsableDePago {
 	// Validar test 05
 	public void validTipoResonsable05() {		
 		String checkTipoResponsable = this.driver.findElement(ByNombreApellido).getAttribute("value");
-		System.out.println("Valor encontrado exitoso"+checkTipoResponsable);
-		assertEquals(checkTipoResponsable, "ETT FASTER ARGENTINA S.A", "No se encontro el valor esperado: ");		
+		System.out.println("Valor Descripcion encontrado: "+checkTipoResponsable);
+		assertEquals(checkTipoResponsable, "SERVICIOS AMBIENTALES BUENOS AIRES S.R.L.", "No se encontro el valor esperado: ");		
  	}
 	
 	public void validAltaCuitCuil05() {
 		String checkCuitCuil = this.driver.findElement(ByCuitCuil).getAttribute("value");
-		System.out.println(checkCuitCuil);
-		assertEquals(checkCuitCuil, "30579572295", "No se encontro el cuit/cuil esperado: ");
+		System.out.println("Valor CUIT - CUIL encontrado: "+checkCuitCuil);
+		assertEquals(checkCuitCuil, "30707000690", "No se encontro el cuit/cuil esperado: ");
 	}
 	
 	// Validar test 11
 	public void validTipoResonsable11() {		
 		String checkTipoResponsable = this.driver.findElement(ByNombreApellido).getAttribute("value");
 		System.out.println(checkTipoResponsable);
-		assertEquals(checkTipoResponsable, "ALACID CLAUDIO LUCIANO", "No se encontro el valor esperado: ");	
+		assertEquals(checkTipoResponsable, "RETEGUI ", "No se encontro el valor esperado: ");	
  	}
 	
 	public void validAltaCuitCuil11() {
 		String checkCuitCuil = this.driver.findElement(ByCuitCuil).getAttribute("value");
 		System.out.println(checkCuitCuil);
-		assertEquals(checkCuitCuil, "20291531777", "No se encontro el cuit/cuil esperado: ");
+		assertEquals(checkCuitCuil, "20208377923", "No se encontro el cuit/cuil esperado: ");
 	}	
 	
 		

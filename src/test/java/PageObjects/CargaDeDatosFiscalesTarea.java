@@ -182,10 +182,15 @@ public class CargaDeDatosFiscalesTarea {
 //	}
 	
 	public void BingresoAdheridoAFacturaElectronica() throws InterruptedException {
-		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Adherido factura electr�nica'])[1]/following::div[4]")).click();
+		driver.findElement(By.id("mat-checkbox-2")).click();
 		System.out.println("check22");
 		Thread.sleep(2000);
 	}
+//	public void BingresoAdheridoAFacturaElectronica() throws InterruptedException {
+//		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Adherido factura electr�nica'])[1]/following::div[4]")).click();
+//		System.out.println("check22");
+//		Thread.sleep(2000);
+//	}
 	
 	public void ingresoEmailAdherido(String emailAdherido) {
 		this.driver.findElement(ByEmailAdherido).sendKeys(emailAdherido.trim());
@@ -290,23 +295,21 @@ public class CargaDeDatosFiscalesTarea {
 //	}
 	
 	// METODOS TELEFONO - PopUp
-	public WebElement ingresoTipoDeTelefono(String tipoDeTelefono) {
+	public WebElement ingresoTipoDeTelefonoLaboral(String tipoDeTelefono) {
 		WebDriverWait wait=new WebDriverWait(driver, 20);
 		WebElement guru99seleniumlink2;
 		guru99seleniumlink2= wait.until(ExpectedConditions.elementToBeClickable(ByTipoDeTelefono));
-		guru99seleniumlink2.sendKeys(tipoDeTelefono);
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.ENTER).build().perform();
-		return null;		
+		guru99seleniumlink2.sendKeys(Keys.DOWN, Keys.TAB);
+		return guru99seleniumlink2;		
 		}
 		
-//	public WebElement ingresoTipoDeTelefono(String tipoDeTelefono) throws InterruptedException {
-//		this.driver.findElement(ByTipoDeTelefono).sendKeys(tipoDeTelefono);
-//		Actions action = new Actions(driver);
-//		action.sendKeys(Keys.ENTER).build().perform();
-//		Thread.sleep(8000);
-//		return null;
-//	}	
+	public WebElement ingresoTipoDeTelefono(String tipoDeTelefono) throws InterruptedException {
+		this.driver.findElement(ByTipoDeTelefono).sendKeys(tipoDeTelefono);
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ENTER).build().perform();
+		Thread.sleep(5000);
+		return null;
+	}	
 	
 	public void ingresoPrefijo(String prefijo) {
 		WebDriverWait wait=new WebDriverWait(driver, 20);
@@ -376,8 +379,8 @@ public class CargaDeDatosFiscalesTarea {
 //	}
 	public void checkboxTelefono() throws InterruptedException {
 		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Interno'])[1]/following::div[1]")).click();
-		System.out.println("check22");
-		Thread.sleep(2000);
+		//System.out.println("check22");
+		Thread.sleep(3000);
 	}
 	
 //	public void btnModificar() throws InterruptedException {

@@ -56,7 +56,7 @@ public class TestObligatorio_05 {
 	public void obligatorio_E_Tipo_de_Responsable_Empresa(String tipoResponsable) throws InterruptedException {
 		AltaResponsableDePago AltaResDePago = new AltaResponsableDePago(driver);
 		AltaResDePago.ingresoTipoResponsable(tipoResponsable);
-		Thread.sleep(600);
+		//Thread.sleep(600);
 	}
 	
 	@Given("Obligatorio E Selecciono el boton Busqueda de entidad")
@@ -70,7 +70,7 @@ public class TestObligatorio_05 {
 	public void obligatorio_E_Se_ingresa_un_valor_de_descripcion_descripcion(String descripcion) throws InterruptedException {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
 		buscarEntidad.ingresoDescripcion(descripcion);
-		Thread.sleep(800);
+		//Thread.sleep(800);
 	}
 
 	@Given("Obligatorio E Se ingresa un valor de cuit(.*)$")
@@ -83,14 +83,14 @@ public class TestObligatorio_05 {
 	public void obligatorio_E_Selecciono_el_Boton_Seleccionar_y_se_selecciona_el_boton_Confirmar_entidad() throws InterruptedException {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
 		buscarEntidad.botonBusqueda();
-		Thread.sleep(3000);
+		//Thread.sleep(200);
 	}
 	
 	@Given("Obligatorio E Se selecciona el valor con checkbox")
 	public void obligatorio_E_Se_selecciona_el_valor_con_checkbox() throws InterruptedException {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
-		buscarEntidad.botonBusqueda();
-		Thread.sleep(3000);
+		//buscarEntidad.botonBusqueda();
+		//Thread.sleep(3000);
 		buscarEntidad.check();
 		Thread.sleep(1000);
 		buscarEntidad.ConfirmarEntidad();

@@ -15,5 +15,5 @@ Feature: Med 160 - Obligatorios 18 - Validar Datos Requeridos
     
 	Examples: 
       | tipoResponsable | razonSocial        | email            |
-      | Externo         | Catalina Fernandez | catfer@email.com |
+      | Externo         | Catalina Fernandez | catfer18@email.com |
       #reacer la validacion

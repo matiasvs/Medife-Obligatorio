@@ -1,4 +1,4 @@
-Feature: Med 165 - Obligatorios 22 - Datos Fiscales, validación requeridos y Validaciones para Condición IVA Exento - Fecha inicio Cond.IVA Botón Confirmar
+Feature: Med 165 - Obligatorios 22 - Datos Fiscales, validaciï¿½n requeridos y Validaciones para Condiciï¿½n IVA Exento - Fecha inicio Cond.IVA Botï¿½n Confirmar
 
   #Se ingreso la prueba con los 2 botones
   Scenario Outline: Comportamiento
@@ -9,8 +9,8 @@ Feature: Med 165 - Obligatorios 22 - Datos Fiscales, validación requeridos y Val
     And Obligatorio vb los siguientes datos ingresados y confirmados:
     And Obligatorio vb Tipo de Responsable <tipoResponsable>
     And Obligatorio vb PopUp Busqueda de entidades
-    And Obligatorio vb Ingreso cuit cuil <cuitCuil>
-    And Obligatorio vb Ingreso descripcion <descripcion>    
+    And Obligatorio vb Ingreso descripcion <descripcion>
+    And Obligatorio vb Ingreso cuit cuil <cuitCuil>        
     And Obligatorio vb Busqueda seleccion y confirmacion de entidad
     And Obligatorio vb Ingreso campos necesarios mail y fecha de vigencia para que se pueda ejecutar datos fiscales
     And Obligatorio vb Ingreso eMail <mail>
@@ -36,7 +36,7 @@ Feature: Med 165 - Obligatorios 22 - Datos Fiscales, validación requeridos y Val
 
     Examples: 
       | tipoResponsable | cuitCuil    | descripcion                 | mail             | fechaVigencia | condicionIVA | fechaInicioCondicionIVA | formaPago | facturaElectronica | DatosFiscalesMail          |
-      | Grupo           | 30552982815 | MOSAICOS ROSSI HNOS. S.R.L. | catfer@email.com | 07/06/2019    | Exento       | 18/06/2019              | check     | dato               | variableFiscales@gmail.com |
+      | Grupo           | 20245404701 | VILLALBA | catfer@email.com | 07/06/2019    | Exento       | 18/06/2019              | check     | dato               | variableFiscales@gmail.com |
 #capas se elecciona con la tecla
 
 

@@ -50,13 +50,14 @@ public class TestObligatorio_06 {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
 		//buscarEntidad.ingresoBusquedaCuit(BusquedaCuit);
 		buscarEntidad.botonBusqueda();
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 	}
 
 	@When("Obligatorio F el cursor marca el ultimo registro y Selecciona el Boton Seleccionar")
 	public void obligatorio_F_el_cursor_marca_el_ultimo_registro_y_Selecciona_el_Boton_Seleccionar() throws InterruptedException {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
 		buscarEntidad.ultimaPagina();
+		Thread.sleep(5000);
 		buscarEntidad.checkboxLast();
 	}
 

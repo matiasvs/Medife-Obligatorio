@@ -102,6 +102,7 @@ public class TestObligatorio_40 {
 	@Then("Obligatorio as Seleccionar boton Nuevo telefo")
 	public void obligatorio_as_Seleccionar_boton_Nuevo_telefo() throws InterruptedException {
 		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
+		Thread.sleep(6000);
 	    fiscales.ingresoNuevoTelefono();
 	}
 	//ingresoTipoDeTelefono

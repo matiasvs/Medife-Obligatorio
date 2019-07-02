@@ -1,4 +1,4 @@
-Feature: Med 183 - Obligatorios 401 - Seccion Telefono Validar Boton Confirmar
+Feature: Med 183 - Obligatorios 40 - Seccion Telefono Validar Boton Confirmar
 
   #Se ingreso la prueba con los 2 botones
   Scenario Outline: Comportamiento
@@ -22,4 +22,4 @@ Feature: Med 183 - Obligatorios 401 - Seccion Telefono Validar Boton Confirmar
 
     Examples:  
       | tipoResponsable | cuitCuil    | descripcion          | mail             | fechaVigencia | TipoDeTelefono | Prefijo | Numero   |
-      | Empresa         | 30708838825 | KRAH AMERICA LATINA S.A.   | catfer@email.com | 07/06/2019 | Particular | 011     | 67867878 |
+      | Empresa         | 30574893395 | 	BLOISE HERMANOS | catfer@email.com | 07/06/2019 | Particular | 011     | 78941235 |

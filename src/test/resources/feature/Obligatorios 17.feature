@@ -1,4 +1,4 @@
-Feature: Med 159 - Obligatorios 17 - Validar Botón Confirmar. Y pantalla datos fiscales
+Feature: Med 159 - Obligatorios 17 - Validar Botï¿½n Confirmar. Y pantalla datos fiscales
   #Se ingreso la prueba con los 2 botones
   Scenario Outline: Comportamiento
     Given Obligatorio L Dado un usuario conectado
@@ -23,4 +23,4 @@ Feature: Med 159 - Obligatorios 17 - Validar Botón Confirmar. Y pantalla datos f
     
 	Examples: 
       | tipoResponsable | razonSocial        | email            | cuitCuil    | fechaVigencia |
-      | Externo         | Catalina Fernandez | catfer@email.com | 20336898243 | 06/06/2019    |
+      | Externo         | Catalina Fernandez | catfer@email.com | 20336898233 | 06/06/2019    |

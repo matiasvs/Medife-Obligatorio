@@ -1,4 +1,4 @@
-Feature: Med 186 - Obligatorios 422 - Seccion Telefono Validar Boton Modificar
+Feature: Med 186 - Obligatorios 42 - Seccion Telefono Validar Boton Modificar
 
   Scenario Outline: Comportamiento
     Given Obligatorio cv Dado un usuario conectado
@@ -29,4 +29,4 @@ Feature: Med 186 - Obligatorios 422 - Seccion Telefono Validar Boton Modificar
 
     Examples: 
       | tipoResponsable | cuitCuil    | descripcion           | mail             | fechaVigencia | TipoDeTelefono | Prefijo | Numero   | NuevoTipoDeTelefono | NuevoPrefijo | NuevoNumero | NuevoInterno |
-      | Empresa         | 30701299465 | ATENTO ARGENTINA S.A. | catfer@email.com | 07/06/2019    | Particular     |     011 | 42424242 | Laboral             |          015 |    23237878 |           56 |
+      | Empresa         | 30590368853 | BIFERDIL SRL | catfer@email.com | 07/06/2019    | Particular     |     011 | 42424242 | Laboral             |          015 |    23237878 |           56 |

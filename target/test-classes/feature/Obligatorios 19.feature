@@ -17,9 +17,9 @@ Feature: Med 161 - Obligatorios 19 - Validar comportamiento pantalla segun valor
     And Obligatorio T Ingreso fecha de vigencia <fechaVigencia>
     And Obligatorio T Seleccion boton confirmar
     Then Obligatorio T validar ingreso a Datos fiscales
-    When Obligatorio T Cuando se seleciona el valor <condicionIVA1> para el campo Condicion de IVA
+    When Obligatorio T Cuando se seleciona el valor <condicionIVA> para el campo Condicion de IVA
     Then Obligatorio T Entonces la aplicacion muestra los siguientes campos editables
-    Then Obligatorio T Fecha inicio condicion IVA <condicionIva>
+    Then Obligatorio T Fecha inicio condicion IVA <fechaCondicionIva>
     Then Obligatorio T Nro. IIBB <nroIIBB>
     Then Obligatorio T Condicion IIBB <CondicionIIBB>
     Then Obligatorio T Forma de pago <formaPago>
@@ -27,5 +27,7 @@ Feature: Med 161 - Obligatorios 19 - Validar comportamiento pantalla segun valor
     Then Obligatorio T Email <DatosFiscalesMail>
 
     Examples:  
-      | tipoResponsable | cuitCuil    | descripcion               | mail             | fechaVigencia | condicionIVA1 | condicionIva | nroIIBB       | CondicionIIBB | formaPago | DatosFiscalesMail  |
-      | Empresa         | 30558573232 | 	EMBAJADA BRITANICA    | catfer@email.com | 07/06/2019    | Responsable   | 12/06/2019   | 2235654654456 | Exento        | Pago Presencial     | correo@mail.com.ar |
+      | tipoResponsable | cuitCuil    | descripcion               | mail             | fechaVigencia | condicionIVA | fechaCondicionIva | nroIIBB       | CondicionIIBB | formaPago | DatosFiscalesMail  |
+      | Empresa         | 30708449489 | 	ANTIGUA POZUELO S.C.S | catfer@email.com | 07/06/2019    | Responsable   | 12/06/2019   | 2235654654456 | Exento        | Pago Presencial     | correo@mail.com.ar |
+
+      #Pide validar los campos que se habilitan con la opcion Responsable Inscripto seria tomar el campo y ver si es editable revisar se iso

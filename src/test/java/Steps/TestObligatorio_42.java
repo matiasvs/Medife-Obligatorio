@@ -103,7 +103,7 @@ public class TestObligatorio_42 {
 	@Then("Obligatorio cv Seleccionar boton Nuevo telefo")
 	public void obligatorio_cv_Seleccionar_boton_Nuevo_telefo() throws InterruptedException {
 		CargaDeDatosFiscalesTarea fiscales = new CargaDeDatosFiscalesTarea(driver);
-		Thread.sleep(6000);
+		//Thread.sleep(6000);
 	    fiscales.ingresoNuevoTelefono();
 	}
 

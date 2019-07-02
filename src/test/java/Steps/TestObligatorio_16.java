@@ -66,10 +66,11 @@ public class TestObligatorio_16 {
 		AltaResDePago.ingresoCuitCuil(cuitCuil);
 	}
 
-	@When("Obligatorio R Cuando Seleccionar el Boton Guardar o Confirmar")
-	public void obligatorio_R_Cuando_Seleccionar_el_Boton_Guardar_o_Confirmar() throws InterruptedException {
+	@When("Obligatorio R Cuando se Selecciona el Boton Guardar o Confirmar")
+	public void obligatorio_R_Cuando_se_Selecciona_el_Boton_Guardar_o_Confirmar() throws InterruptedException {
 		AltaResponsableDePago AltaResDePago = new AltaResponsableDePago(driver);
 		AltaResDePago.btnGuardar();
+		Thread.sleep(1000);
 		AltaResDePago.btnConfirmar();
 	}
 
