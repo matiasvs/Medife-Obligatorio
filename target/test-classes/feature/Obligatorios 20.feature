@@ -26,4 +26,4 @@ Feature: Med 162 - Obligatorios 20 - Validar comportamiento pantalla segun valor
 
     Examples: 
       | tipoResponsable | cuitCuil    | descripcion           | mail             | fechaVigencia | condicionIVA | fechaCondicionIva | formaPago | facturaElectronica | DatosFiscalesMail          |
-      | Empresa         | 33701271489 | ACC GROUP S.A. | catfer@email.com | 07/06/2019    | Monotributo  | 14/06/2019        | check     | dato               | variableFiscales@gmail.com |
+      | Empresa         | 20043797183 | CEBALLOS JORGE | catfer@email.com | 07/06/2019    | Monotributo  | 14/06/2019        | check     | dato               | variableFiscales@gmail.com |

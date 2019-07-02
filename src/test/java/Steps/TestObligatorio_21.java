@@ -72,7 +72,6 @@ public class TestObligatorio_21 {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
 		buscarEntidad.ingresoDescripcion(descripcion);
 		Thread.sleep(800);
-		System.out.println("text");
 	}
 
 	@Given("Obligatorio fg Ingreso cuit cuil(.*)")
@@ -124,36 +123,35 @@ public class TestObligatorio_21 {
 	@When("Obligatorio fg Cuando seleciona el valor(.*)para el campo Condicion de IVA Consumidor")
 	public void obligatorio_fg_Cuando_seleciona_el_valor_para_el_campo_Condicion_de_IVA_Consumidor(String condicionIva) {
 		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
-		datosFiscales.ingresoCondicionIVA(condicionIva);
-		System.out.println("valor");
+		datosFiscales.ingresoCondicionIVAConsumidorFinal();
 	}
 
 	@Then("Obligatorio fg La aplicacion muestra los siguientes campos editables")
 	public void obligatorio_fg_La_aplicacion_muestra_los_siguientes_campos_editables() {
-		System.out.println("campos editables");
+		System.out.println("Prueba de campos editables");
 	}
 
 	@Then("Obligatorio fg Fecha inicio condicion IVA (.*)")
-	public void obligatorio_fg_Fecha_inicio_condicion_IVA(String fechaInicioCondicionIVA) {
-		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
-		datosFiscales.ingresoFechaInicioCondicionIVA(fechaInicioCondicionIVA);
+	public void obligatorio_fg_Fecha_inicio_condicion_IVA(String fechaCondicionIva) {
+		CargaDeDatosFiscalesTarea dFiscales = new CargaDeDatosFiscalesTarea(driver);
+	    dFiscales.validarFechaInicioCondicionIVA(fechaCondicionIva);
 	}
 
 	@Then("Obligatorio fg Forma de pago check")
 	public void obligatorio_fg_Forma_de_pago_check() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
+		datosFiscales.validarFormaDePago();
 	}
 
 	@Then("Obligatorio fg Adherido factura electronica dato")
 	public void obligatorio_fg_Adherido_factura_electronica_dato() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
+		datosFiscales.validarAdheridoAFacturaElectronica();
 	}
 
 	@Then("Obligatorio fg Email (.*)")
-	public void obligatorio_fg_Email_variableFiscales_gmail_com() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	public void obligatorio_fg_Email_variableFiscales_gmail_com(String emailAdherido) {
+		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
+		datosFiscales.validarEmailAdherido(emailAdherido);
 	}
 }
