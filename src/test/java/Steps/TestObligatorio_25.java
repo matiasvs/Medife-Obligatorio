@@ -121,7 +121,8 @@ public class TestObligatorio_25 {
 
 	@Then("Obligatorio fs validar pantalla de Datos fiscales")
 	public void obligatorio_fs_validar_pantalla_de_Datos_fiscales() {
-	    System.out.println("Validacion de datos fiscales");
+		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
+		datosFiscales.checkPantallaDatosFiscales();
 	}
 
 	@Then("Obligatorio fs Ingreso Condicion IVA(.*)")
