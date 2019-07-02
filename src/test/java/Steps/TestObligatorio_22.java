@@ -123,27 +123,26 @@ public class TestObligatorio_22 {
 	}
 
 	@When("Obligatorio vb Condicion de IVA (.*)")
-	public void obligatorio_vb_Condicion_de_IVA_Exento() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	public void obligatorio_vb_Condicion_de_IVA_Exento(String condicionIva) {
+		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
+		datosFiscales.ingresoCondicionIVAExento();
 	}
 
 	@Then("Obligatorio vb Fecha inicio condicion IVA (.*)")
-	public void obligatorio_vb_Fecha_inicio_condicion_IVA(Integer int1, Integer int2, Integer int3) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	public void obligatorio_vb_Fecha_inicio_condicion_IVA(String fechaInicioCondicionIVA) {
+		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
+		datosFiscales.ingresoFechaInicioCondicionIVA(fechaInicioCondicionIVA);
 	}
 
 	@When("Obligatorio vb Selecciono el boton confirmar")
-	public void obligatorio_vb_Selecciono_el_boton_confirmar() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	public void obligatorio_vb_Selecciono_el_boton_confirmar() throws InterruptedException {
+		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
+		datosFiscales.btnConfirmar();
 	}
 
 	@Then("Obligatorio vb La apliacion emite un mensaje indicando que Fecha Inicio Cond. De IVA es dato requerido para Condicion IVA Exento. y que los siguientes campos son requeridos,")
 	public void obligatorio_vb_La_apliacion_emite_un_mensaje_indicando_que_Fecha_Inicio_Cond_De_IVA_es_dato_requerido_para_Condicion_IVA_Exento_y_que_los_siguientes_campos_son_requeridos() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	    System.out.println("Validacion de fecha de inicio condicon IVA es dato requerido");
 	}
 
 	@Then("Obligatorio vb Forma de pago (.*)")

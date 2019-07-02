@@ -132,7 +132,6 @@ public class TestObligatorio_19 {
 	//condicionIva
 	@When("Obligatorio T Cuando se seleciona el valor(.*)para el campo Condicion de IVA")
 	public void obligatorio_T_Cuando_se_seleciona_el_valor_Responsable_para_el_campo_Condicion_de_IVA(String condicionIva) throws InterruptedException {
-		Thread.sleep(4000);
 		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
 		datosFiscales.ingresoCondicionIVAResponsableInscripto();
 	}

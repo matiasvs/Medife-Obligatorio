@@ -26,4 +26,4 @@ Feature: Med 163 - Obligatorios 21 - Validar comportamiento pantalla segun valor
 
     Examples: 
       | tipoResponsable | cuitCuil    | descripcion                 | mail             | fechaVigencia | condicionIVA | fechaInicioCondicionIVA | formaPago | facturaElectronica | DatosFiscalesMail          |
-      | Grupo           | 20043797183 | CEBALLOS | catfer@email.com | 07/06/2019    | Consumidor   | 14/06/2019              | check     | dato               | variableFiscales@gmail.com |
+      | Grupo           | 23288077789 | REPOLE | catfer@email.com | 07/06/2019    | Consumidor   | 14/06/2019              | check     | dato               | variableFiscales@gmail.com |

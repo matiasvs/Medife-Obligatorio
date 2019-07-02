@@ -35,8 +35,8 @@ Feature: Med 165 - Obligatorios 22 - Datos Fiscales, validaci�n requeridos y V
     Then Obligatorio vb no guarda los datos
 
     Examples: 
-      | tipoResponsable | cuitCuil    | descripcion                 | mail             | fechaVigencia | condicionIVA | fechaInicioCondicionIVA | formaPago | facturaElectronica | DatosFiscalesMail          |
-      | Grupo           | 20245404701 | VILLALBA | catfer@email.com | 07/06/2019    | Exento       | 18/06/2019              | check     | dato               | variableFiscales@gmail.com |
+      | tipoResponsable | cuitCuil    | descripcion    | mail             | fechaVigencia | condicionIVA | fechaInicioCondicionIVA | formaPago | facturaElectronica | DatosFiscalesMail          |
+      | Empresa         | 20200198426 | TOP SERVICE S.R.L | catfer@email.com | 07/06/2019    | Exento       | 18/06/2019              | check     | dato               | variableFiscales@gmail.com |
 #capas se elecciona con la tecla
 
 
