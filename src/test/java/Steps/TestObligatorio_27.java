@@ -74,7 +74,7 @@ public class TestObligatorio_27 {
 		Thread.sleep(800);
 	}
 
-	@Given("Obligatorio fz Ingreso cuit cuil {int}")
+	@Given("Obligatorio fz Ingreso cuit cuil(.*)")
 	public void obligatorio_fz_Ingreso_cuit_cuil(String BusquedaCuit) {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
 		buscarEntidad.ingresoBusquedaCuit(BusquedaCuit);

@@ -8,8 +8,8 @@ Feature: Med 171 - Obligatorios 28 - Fecha inicio Cond.IVA < al dia de la fecha 
     And Obligatorio ft los siguientes datos ingresados y confirmados:
     And Obligatorio ft Tipo de Responsable <tipoResponsable>
     And Obligatorio ft PopUp Busqueda de entidades
-    And Obligatorio ft Ingreso cuit cuil <cuitCuil>
-    And Obligatorio ft Ingreso descripcion <descripcion>    
+    And Obligatorio ft Ingreso descripcion <descripcion>
+    And Obligatorio ft Ingreso cuit cuil <cuitCuil>        
     And Obligatorio ft Busqueda seleccion y confirmacion de entidad
     And Obligatorio ft Ingreso campos necesarios mail y fecha de vigencia para que se pueda ejecutar datos fiscales
     And Obligatorio ft Ingreso eMail <mail>
