@@ -8,9 +8,9 @@ Feature: Med 168 - Obligatorios 25 - Fecha inicio Cond.IVA < al dia de la fecha
     And Obligatorio fs La pantalla Alta de responsable de pago desplegada
     And Obligatorio fs los siguientes datos ingresados y confirmados:
     And Obligatorio fs Tipo de Responsable <tipoResponsable>
-    And Obligatorio fs PopUp Busqueda de entidades
-    And Obligatorio fs Ingreso cuit cuil <cuitCuil>
-    And Obligatorio fs Ingreso descripcion <descripcion>    
+    And Obligatorio fs PopUp Busqueda de entidades    
+    And Obligatorio fs Ingreso descripcion <descripcion> 
+    And Obligatorio fs Ingreso cuit cuil <cuitCuil>   
     And Obligatorio fs Busqueda seleccion y confirmacion de entidad
     And Obligatorio fs Ingreso campos necesarios mail y fecha de vigencia para que se pueda ejecutar datos fiscales
     And Obligatorio fs Ingreso eMail <mail>
@@ -24,6 +24,6 @@ Feature: Med 168 - Obligatorios 25 - Fecha inicio Cond.IVA < al dia de la fecha
     
 
     Examples: 
-      | tipoResponsable | cuitCuil    | descripcion                 | mail             | fechaVigencia | condicionIVA | fechaInicioCondicionIVA | formaPago | facturaElectronica | DatosFiscalesMail          |
-      | Grupo           | 30552982815 | MOSAICOS ROSSI HNOS. S.R.L. | catfer@email.com | 07/06/2019    | Exento       | 014/01/2019              | check     | dato               | variableFiscales@gmail.com |
+      | tipoResponsable | cuitCuil    | descripcion                    | mail             | fechaVigencia | condicionIVA | fechaInicioCondicionIVA | formaPago | facturaElectronica | DatosFiscalesMail          |
+      | Empresa         | 30504170981 | VESUVIO S.A.C.I.F. E.I | catfer@email.com | 07/06/2019    | Exento       | 01/01/2019              | check     | dato               | variableFiscales@gmail.com |
 #capas se elecciona con la tecla

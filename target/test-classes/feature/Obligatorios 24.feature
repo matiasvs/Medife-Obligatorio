@@ -1,4 +1,4 @@
-Feature: Med 167 - Obligatorios 24 - Datos Fiscales, validación requeridos y Validaciones Pantalla - Botón Confirmar para Monotributo
+Feature: Med 167 - Obligatorios 24 - Datos Fiscales, validaciï¿½n requeridos y Validaciones Pantalla - Botï¿½n Confirmar para Monotributo
 
   #Se ingreso la prueba con los 2 botones
   Scenario Outline: Comportamiento
@@ -9,8 +9,8 @@ Feature: Med 167 - Obligatorios 24 - Datos Fiscales, validación requeridos y Val
     And Obligatorio fw los siguientes datos ingresados y confirmados:
     And Obligatorio fw Tipo de Responsable <tipoResponsable>
     And Obligatorio fw PopUp Busqueda de entidades
-    And Obligatorio fw Ingreso cuit cuil <cuitCuil>
-    And Obligatorio fw Ingreso descripcion <descripcion>    
+    And Obligatorio fw Ingreso descripcion <descripcion>
+    And Obligatorio fw Ingreso cuit cuil <cuitCuil>        
     And Obligatorio fw Busqueda seleccion y confirmacion de entidad
     And Obligatorio fw Ingreso campos necesarios mail y fecha de vigencia para que se pueda ejecutar datos fiscales
     And Obligatorio fw Ingreso eMail <mail>
@@ -37,6 +37,6 @@ Feature: Med 167 - Obligatorios 24 - Datos Fiscales, validación requeridos y Val
     
 
     Examples: 
-      | tipoResponsable | cuitCuil    | descripcion                 | mail             | fechaVigencia | condicionIVA | fechaInicioCondicionIVA | formaPago | facturaElectronica | DatosFiscalesMail          |
-      | Grupo           | 30552982815 | MOSAICOS ROSSI HNOS. S.R.L. | catfer@email.com | 07/06/2019    | Monotributo  | 17/06/2019              | check     | dato               | variableFiscales@gmail.com |
+      | tipoResponsable | cuitCuil    | descripcion | mail               | fechaVigencia | condicionIVA | fechaInicioCondicionIVA | formaPago | facturaElectronica | DatosFiscalesMail          |
+      | Empresa         | 30500839275 | KASDORF S.A   | catfer24@email.com | 07/06/2019    | Monotributo  | 17/06/2019              | check     | dato               | variableFiscales@gmail.com |
 #capas se elecciona con la tecla
