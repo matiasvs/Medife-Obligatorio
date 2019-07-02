@@ -119,7 +119,7 @@ public class TestObligatorio_27 {
 		datosFiscales.checkPantallaDatosFiscales();
 	}
 
-	@Then("Obligatorio fz Ingreso Condicion IVA().*")
+	@Then("Obligatorio fz Ingreso Condicion IVA(.*)")
 	public void obligatorio_fz_Ingreso_Condicion_IVA_condicionIva(String fechaInicioCondicionIVA) {
 		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
 		datosFiscales.ingresoCondicionIVAExento();
