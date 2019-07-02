@@ -27,7 +27,7 @@ Feature: Med 161 - Obligatorios 19 - Validar comportamiento pantalla segun valor
     Then Obligatorio T Email <DatosFiscalesMail>
 
     Examples:  
-      | tipoResponsable | cuitCuil    | descripcion               | mail             | fechaVigencia | condicionIVA | fechaCondicionIva | nroIIBB       | CondicionIIBB | formaPago | DatosFiscalesMail  |
-      | Empresa         | 30708449489 | 	ANTIGUA POZUELO S.C.S | catfer@email.com | 07/06/2019    | Responsable   | 12/06/2019   | 2235654654456 | Exento        | Pago Presencial     | correo@mail.com.ar |
+      | tipoResponsable | cuitCuil    | descripcion           | mail               | fechaVigencia | condicionIVA | fechaCondicionIva | nroIIBB       | CondicionIIBB | formaPago       | DatosFiscalesMail  |
+      | Empresa         | 33628899229 | COLDESO S.R.L | catfe19r@email.com | 07/06/2019    | Responsable  | 12/06/2019        | 2235654654456 | Exento        | Pago Presencial | correo@mail.com.ar |
 
       #Pide validar los campos que se habilitan con la opcion Responsable Inscripto seria tomar el campo y ver si es editable revisar se iso

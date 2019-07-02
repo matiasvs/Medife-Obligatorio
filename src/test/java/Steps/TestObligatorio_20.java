@@ -66,19 +66,19 @@ public class TestObligatorio_20 {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
 		buscarEntidad.botonBusquedaEntidades();
 	}
-
-	@Given("Obligatorio x Ingreso cuit cuil(.*)")
-	public void obligatorio_x_Ingreso_cuit_cuil(String BusquedaCuit) {
-		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
-		buscarEntidad.ingresoBusquedaCuit(BusquedaCuit);
-	}
-
+	
 	@Given("Obligatorio x Ingreso descripcion(.*)")
 	public void obligatorio_x_Ingreso_descripcion_FUNARG_S_R_L(String descripcion) throws InterruptedException {
 		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
 		buscarEntidad.ingresoDescripcion(descripcion);
 		Thread.sleep(800);
 	}
+
+	@Given("Obligatorio x Ingreso cuit cuil(.*)")
+	public void obligatorio_x_Ingreso_cuit_cuil(String BusquedaCuit) {
+		BusquedaDeEntidad buscarEntidad = new BusquedaDeEntidad(driver);
+		buscarEntidad.ingresoBusquedaCuit(BusquedaCuit);
+	}	
 
 	@Given("Obligatorio x Busqueda seleccion y confirmacion de entidad")
 	public void obligatorio_x_Busqueda_seleccion_y_confirmacion_de_entidad() throws InterruptedException {
@@ -119,10 +119,10 @@ public class TestObligatorio_20 {
 	    dFiscales.checkPantallaDatosFiscales();
 	}
 
-	@When("Obligatorio x Cuando se seleciona el valor (.*) para el campo Condicion de IVA")
+	@When("Obligatorio x Cuando se seleciona el valor(.*)para el campo Condicion de IVA")
 	public void obligatorio_x_Cuando_se_seleciona_el_valor_Monotributo_para_el_campo_Condicion_de_IVA(String condicionIVA) {
 		CargaDeDatosFiscalesTarea dFiscales = new CargaDeDatosFiscalesTarea(driver);
-	    dFiscales.ingresoCondicionIVA(condicionIVA);
+	    dFiscales.ingresoCondicionIVAMonotributo();
 	}
 
 	@Then("Obligatorio x Entonces la aplicacion muestra los siguientes campos editables")
@@ -131,26 +131,26 @@ public class TestObligatorio_20 {
 	}
 
 	@Then("Obligatorio x Fecha inicio condicion IVA(.*)")
-	public void obligatorio_x_Fecha_inicio_condicion_IVA(String condicionIVA) {
+	public void obligatorio_x_Fecha_inicio_condicion_IVA(String fechaCondicionIva) {
 	    CargaDeDatosFiscalesTarea dFiscales = new CargaDeDatosFiscalesTarea(driver);
-	    dFiscales.ingresoCondicionIVA(condicionIVA);
+	    dFiscales.validarFechaInicioCondicionIVA(fechaCondicionIva);
 	}
 
 	@Then("Obligatorio x Forma de pago check")
 	public void obligatorio_x_Forma_de_pago_check() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
+		datosFiscales.validarFormaDePago();
 	}
 
 	@Then("Obligatorio x Adherido factura electronica dato")
 	public void obligatorio_x_Adherido_factura_electronica_dato() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
+		datosFiscales.validarAdheridoAFacturaElectronica();
 	}
 
-	@Then("Obligatorio x Email variableFiscales@gmail.com")
-	public void obligatorio_x_Email_variableFiscales_gmail_com() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	@Then("Obligatorio x Email(.*)")
+	public void obligatorio_x_Email_variableFiscales_gmail_com(String emailAdherido) {
+		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
+		datosFiscales.validarEmailAdherido(emailAdherido);
 	}
 }

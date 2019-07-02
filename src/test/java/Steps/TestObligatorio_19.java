@@ -129,12 +129,12 @@ public class TestObligatorio_19 {
 	   CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
 	   datosFiscales.checkPantallaDatosFiscales();
 	}
-	
+	//condicionIva
 	@When("Obligatorio T Cuando se seleciona el valor(.*)para el campo Condicion de IVA")
-	public void obligatorio_T_Cuando_se_seleciona_el_valor_Responsable_para_el_campo_Condicion_de_IVA(String condicionIva) {
+	public void obligatorio_T_Cuando_se_seleciona_el_valor_Responsable_para_el_campo_Condicion_de_IVA(String condicionIva) throws InterruptedException {
+		Thread.sleep(4000);
 		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
-		datosFiscales.ingresoCondicionIVA(condicionIva);
-		System.out.println("valor");
+		datosFiscales.ingresoCondicionIVAResponsableInscripto();
 	}
 
 	@Then("Obligatorio T Entonces la aplicacion muestra los siguientes campos editables")
@@ -145,37 +145,36 @@ public class TestObligatorio_19 {
 	@Then("Obligatorio T Fecha inicio condicion IVA(.*)")
 	public void obligatorio_T_Fecha_inicio_condicion_IVA_condicionIva(String fechaInicioCondicionIVA) {
 		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
-		datosFiscales.ingresoFechaInicioCondicionIVA(fechaInicioCondicionIVA);
+		datosFiscales.validarFechaInicioCondicionIVA(fechaInicioCondicionIVA);
 	}
 
 	@Then("Obligatorio T Nro. IIBB(.*)")
 	public void obligatorio_T_Nro_IIBB_nroIIBB(String numeroIIBB) {
 		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
-		datosFiscales.ingresoByNumeroIIBB(numeroIIBB);
+		datosFiscales.validarByNumeroIIBB(numeroIIBB);
 	}
 
 	@Then("Obligatorio T Condicion IIBB(.*)")
 	public void obligatorio_T_Condicion_IIBB_CondicionIIBB(String condicionIIBB) {
 		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
-		datosFiscales.ingresoCondicionIIBB(condicionIIBB);
+		datosFiscales.validarCondicionIIBB(condicionIIBB);
 	}
 
-	@Then("Obligatorio T Forma de pago(.*)")//formaDepago
+	@Then("Obligatorio T Forma de pago(.*)")
 	public void obligatorio_T_Forma_de_pago_formaPago(String formaDepago) {
 		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
-		datosFiscales.ingresoFormaDePagoPresencial();
+		datosFiscales.validarFormaDePago();
 	}
 
 	@Then("Obligatorio T Adherido factura electronica(.*)")
 	public void obligatorio_T_Adherido_factura_electronica_facturaElectronica(String adheridoAFacturaElectronica) throws InterruptedException {
 		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
-		datosFiscales.BingresoAdheridoAFacturaElectronica();
-		System.out.println("af");
+		datosFiscales.validarAdheridoAFacturaElectronica();
 	}
 
 	@Then("Obligatorio T Email(.*)")
 	public void obligatorio_T_Email_DatosFiscalesMail(String emailAdherido) {
 		CargaDeDatosFiscalesTarea datosFiscales = new CargaDeDatosFiscalesTarea(driver);
-		datosFiscales.ingresoEmailAdherido(emailAdherido);
+		datosFiscales.validarEmailAdherido(emailAdherido);
 	}
 }

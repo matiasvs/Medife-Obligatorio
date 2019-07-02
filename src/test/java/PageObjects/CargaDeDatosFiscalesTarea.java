@@ -121,13 +121,41 @@ public class CargaDeDatosFiscalesTarea {
 		this.driver.findElement(ByEmailGeneral).sendKeys(emailGeneral.trim());
 	}
 	
-	// METODOS informacion fiscal
-	public WebElement ingresoCondicionIVA(String condicionIVA) {
-		this.driver.findElement(ByCondicionIVA).sendKeys(condicionIVA);
-		Actions action = new Actions(driver);		 
-		action.sendKeys(Keys.TAB).build().perform();
+	// METODOS informacion fiscal    Keys.DOWN,Keys.DOWN,Keys.DOWN, Keys.DOWN, Keys.TAB String condicionIVAM
+	public WebElement ingresoCondicionIVAResponsableInscripto() {
+		this.driver.findElement(ByCondicionIVA).sendKeys(Keys.UP, Keys.TAB);
+		String condicion = this.driver.findElement(ByCondicionIVA).getText();
+		System.out.println("Valor campo - Condicion IVA: " + condicion);
 		return null;
 	}	
+	public WebElement ingresoCondicionIVAExento() {
+		this.driver.findElement(ByCondicionIVA).sendKeys(Keys.TAB);
+		return null;
+	}	
+	public WebElement ingresoCondicionIVAConsumidorFinal() {
+		this.driver.findElement(ByCondicionIVA).sendKeys(Keys.DOWN, Keys.TAB);
+		return null;
+	}	
+	public WebElement ingresoCondicionIVAMonotributo() {
+		this.driver.findElement(ByCondicionIVA).sendKeys(Keys.DOWN, Keys.DOWN, Keys.TAB);
+		return null;
+	}
+	
+//	public WebElement ingresoCondicionIVAExento(String condicionIVA) {
+//		this.driver.findElement(ByCondicionIVA).sendKeys(Keys.DOWN,Keys.DOWN,Keys.DOWN, Keys.DOWN, Keys.TAB);
+//		return null;
+//	}
+	
+//	public WebElement ingresoCondicionIVAMonotributo(String condicionIVA) {
+//		this.driver.findElement(ByCondicionIVA).sendKeys(Keys.DOWN,Keys.DOWN,Keys.DOWN, Keys.DOWN, Keys.TAB);
+//		return null;
+//	}
+//	public WebElement ingresoCondicionIVA(String condicionIVA) {
+//		this.driver.findElement(ByCondicionIVA).sendKeys(condicionIVA);
+//		Actions action = new Actions(driver);		 
+//		action.sendKeys(Keys.TAB).build().perform();
+//		return null;
+//	}
 
 	public void ingresoFechaInicioCondicionIVA(String fechaInicioCondicionIVA) {
 		this.driver.findElement(ByFechaInicioCondicionIVA).sendKeys(fechaInicioCondicionIVA.trim());
@@ -195,6 +223,33 @@ public class CargaDeDatosFiscalesTarea {
 	public void ingresoEmailAdherido(String emailAdherido) {
 		this.driver.findElement(ByEmailAdherido).sendKeys(emailAdherido.trim());
 	}
+	
+	// VALIDAR CAMPOS EDITABLES
+	public void validarFechaInicioCondicionIVA(String fechaInicioCondicionIVA) {
+		boolean fechaInicio = this.driver.findElement(ByFechaInicioCondicionIVA).isEnabled();
+		System.out.println("Fecha inicio condicion IVA: " + fechaInicio);
+	}
+	public void validarByNumeroIIBB(String numeroIIBB) {
+		boolean numeroParaIIBB = this.driver.findElement(ByNumeroIIBB).isEnabled();
+		System.out.println("Numero IIBB: " + numeroParaIIBB);
+	}
+	public void validarCondicionIIBB(String condicionIIBB) {
+		boolean condicionParaIIBB = this.driver.findElement(ByCondicionIIBB).isEnabled();		
+		System.out.println("Condicion IIBB: " + condicionParaIIBB);
+	}
+	public void validarFormaDePago() {
+		boolean formaDePago = this.driver.findElement(ByFormaDePago).isEnabled();
+		System.out.println("Forma de pago: " + formaDePago);
+	}
+	public void validarAdheridoAFacturaElectronica() {
+		boolean facturaElectronica =  this.driver.findElement(ByAdheridoAFacturaElectronica).isEnabled();
+		System.out.println("Adherido a factura electronica: " + facturaElectronica);
+	}
+	public void validarEmailAdherido(String emailAdherido) {
+		boolean emailParaAdherido =  this.driver.findElement(ByEmailAdherido).isEnabled();
+		System.out.println("Email adheriso: " + emailParaAdherido);
+	}
+	
 	
 	// METODOS DOMICILIO DE FACTURA
 	public void ingresoProvincia(String provincia) {
